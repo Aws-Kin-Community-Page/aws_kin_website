@@ -1,0 +1,2011 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <title>AWS Community Day Kinshasa 2025</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png" />
+  <link rel="manifest" href="images/site.webmanifest" />
+  <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5" />
+  <link rel="shortcut icon" href="images/favicon.ico" />
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="msapplication-config" content="images/browserconfig.xml" />
+  <meta name="theme-color" content="#ffffff" />
+
+  <meta property="og:url" content="index.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="AWS Community Day Kinshasa 2025" />
+  <meta property="og:description"
+    content="AWS Community Day Kinshasa 2025 est organisé par AWS User Group Kinshasa. Nous sommes une communauté unie et diversifiée d'apprenants les outils et technologies d'Amazon Web Services." />
+
+  <meta property="og:image" content="images/ACD-Bengaluru-2025.png" />
+  <meta property="og:image:secure_url" content="images/ACD-Bengaluru-2025.png" />
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@awsug">
+  <meta name="twitter:creator" content="@awsugBengaluru">
+  <meta name="twitter:title" content="AWS Users Group Bengaluru">
+  <meta name="twitter:description"
+    content="AWS User Group Bengaluru is volunteer driven, group of passionate Amazon Web Services (aka AWS) {Developers, Architects, Users, Evangelists} who meet to {share best practices, discuss up coming features, pit falls, etc} in Bengaluru.">
+  <meta name="twitter:image" content="../communityday.awsug.in/images/aws-Bengaluru-group.png">
+
+  <script src="../code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+  <script src="../stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="../unpkg.com/ionicons%404.5.5/dist/css/ionicons.min.css" rel="stylesheet" />
+  <link href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="stylesheets/intlTelInput.css">
+  <link rel="stylesheet" href="../stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  <!-- <link rel="stylesheet" href="2018/assets/css/style1.css"> -->
+  <link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
+  <link rel="stylesheet" type="text/css" href="stylesheets/mystyles.css" />
+  <link rel="stylesheet" type="text/css" href="../cdn.jsdelivr.net/npm/slick-carousel%401.8.1/slick/slick.css" />
+  <script type="text/javascript" src="../cdn.jsdelivr.net/npm/slick-carousel%401.8.1/slick/slick.min.js"></script>
+  <!-- This line is required for side sharethis-inline-share-buttons -->
+  <!-- <script type="text/javascript"
+    src="https://platform-api.sharethis.com/js/sharethis.js#property=630e27bafd193a0013760206&product=sticky-share-buttons"></script> -->
+  <link rel="manifest" href="manifest.json" />
+  <!-- Google analytics integration -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FSG8BN7WV5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-FSG8BN7WV5');
+  </script>
+  <style>
+    .background-section {
+      background-image: url('images/Website-background.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 100%; 
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white; /* Adjust text color for better visibility */
+    }
+    .background-section .container {
+      padding: 20px;
+    }
+    .community-partner-info {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .community-partner-info p {
+      font-size: 18px;
+      line-height: 1.5em;
+      color: #333;
+    }
+
+    .community-partner-info a {
+      color: #ff9900;
+      text-decoration: none;
+    }
+
+    .community-partner-info a:hover {
+      text-decoration: underline;
+    }
+
+    .floating-register-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 9999; /* Increased z-index to appear above menu */
+      display: none; /* Initially hidden */
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    .floating-register-btn.visible {
+      display: block;
+    }
+
+    /* Modal fixes */
+    body.modal-open {
+      overflow: hidden !important;
+      padding-right: 15px; /* Prevents shift when scrollbar disappears */
+    }
+    
+    .modal {
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    
+    .modal-backdrop {
+      opacity: 0.7 !important;
+    }
+    
+    .modal-open .modal {
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
+
+    /* Mobile-specific adjustments */
+    @media (max-width: 768px) {
+      .floating-register-btn {
+        bottom: 30px; /* Increased bottom spacing for mobile */
+        right: 15px; /* Adjusted right spacing for mobile */
+      }
+      
+      .floating-register-btn img {
+        max-width: 100px; /* Reduced size for mobile */
+        height: auto;
+      }
+    }
+
+    /* Additional modal styles */
+    .modal-open-fixed {
+      overflow: hidden !important;
+    }
+    
+    .modal {
+      z-index: 1050;
+    }
+    
+    .modal-dialog.modal-lg {
+      max-width: 800px;
+      margin: 30px auto;
+    }
+    
+    .modal-content {
+      box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    }
+    
+    /* Session/Workshop speaker styles */
+    .session-speakers-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+    
+    .session-speaker {
+      display: flex;
+      align-items: center;
+      background: #f9f9f9;
+      padding: 10px;
+      border-radius: 8px;
+      width: 100%;
+    }
+    
+    .session-speaker-image {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 15px;
+    }
+    
+    .session-speaker-details {
+      flex: 1;
+    }
+    
+    .session-speaker-name {
+      font-weight: bold;
+      margin-bottom: 5px;
+      font-size: 16px;
+    }
+    
+    .session-speaker-tagline {
+      color: #666;
+      margin-bottom: 5px;
+      font-size: 14px;
+    }
+    
+    .session-speaker-linkedin {
+      color: #0077b5;
+      font-size: 20px;
+    }
+    
+    /* Mobile adjustments */
+    @media (max-width: 767px) {
+      .modal-dialog.modal-lg {
+        width: 95%;
+        margin: 10px auto;
+      }
+      
+      .session-speaker {
+        flex-direction: column;
+        text-align: center;
+      }
+      
+      .session-speaker-image {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+    }
+
+    /* Add overlay style to prevent flash when closing modal */
+    modal-backdrop-custom {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 1040;
+      opacity: 0;
+      transition: opacity 0.15s linear;
+      pointer-events: none;
+    }
+    
+    .modal-backdrop-custom.show {
+      opacity: 1;
+    }
+    
+    /* Better fixed positioning for modal open */
+    body.modal-lock {
+      position: fixed;
+      width: 100%;
+      overflow: hidden;
+    }
+    
+    /* Improve modal animation */
+    .modal.fade .modal-dialog {
+      transition: transform 0.2s ease-out !important;
+    }
+  </style>
+</head>
+<body>
+  <div id="page">
+    <div class="section section-1 hdr background-section" id="home" style="padding-top: 700px;">
+      <div class="content" style="position: absolute;">
+        <div class="container"> 
+           
+            <div style="width: 100%!important;" class="left">
+              <div class="left_in">
+                <img src="images/ACD-Dark-Bg-logo-400-x-200.png">
+                <div class="landing-register-btn">
+                  <a href="https://konfhub.com/checkout/acdb25" target="_blank" class="register-now-btn">Register Now</a>
+                </div>
+                <div class="txt">
+                  <h4 class="headin-ttl">
+                    Exciting updates are on their way!
+                  </h4>
+                  <p>
+                    AWS User Group Bengaluru (AWSUGBLR) is back with a bang to host the most awaited event, AWS Community Day Bengaluru 2025, unveiling success stories, use cases & much more from industry leaders. The conference will be held on May 23rd, followed by hands-on workshops on May 24th to dive deeper into AWS technologies.
+                  </p>
+                </div> 
+              </div> 
+            </div>
+           
+        </div>
+      </div>
+      <div id="nav-bar">
+          <p id="toggle"><span></span></p> 
+          <ul> 
+            <li>
+              <a href="#com_info">About</a>
+            </li>     
+             <li>
+              <a href="#agenda">Agenda</a>
+            </li> 
+            <!--<li>
+              <a href="#blogathon">Blogathon</a>
+            </li>  -->
+            <li>
+              <a href="#communityPartners">Community Partners</a>
+            </li> 
+            <li>
+              <a href="#tickets">Get Tickets</a>
+            </li> 
+            <li>
+              <a href="#refund-policy">Refund Policy</a>
+            </li>
+            <li>
+              <a href="#sessions">Sessions</a>
+            </li>   
+            <li>
+              <a href="#speakers">Speakers</a>
+            </li> 
+            <li>
+              <a href="#sponsors">Sponsors</a>
+            </li>
+            <li>
+              <a href="#volunteers">Volunteers</a>
+            </li>
+            <li>
+              <a href="#workshops">Workshops</a>
+            </li>
+            <li>
+              <a href="photo-booth/index.html">Virtual Photo Booth</a>
+            </li>
+            <li>
+              <a href="code-of-conduct.html">Code Of Conduct</a>
+            </li>
+            <li>
+              <a href="acd-blr-2024.html" target="_blank">Community Day 2024</a>
+            </li> 
+          </ul>
+      </div>
+      
+    </div> 
+    <div class="section section-2">
+      <div class="container flex-it">
+        <div class="f1 left" id="com_info">
+          <div class="left_in">
+            <h4 class="headin-ttl">
+              WHO ARE WE?
+            </h4>
+            <p>
+              <b>AWS User Group Bengaluru</b>
+              is a volunteer based group that is united by community-led learnings and
+              diversified by the wide variety of tools and technologies
+              closely knit with Amazon Web Services, cloud computing
+              technology, AWS design implementation and servicing, high
+              scalability / performance computing, production use cases of
+              AWS.
+            </p>
+            <p>
+              AWS Community Days are community-organized cloud education events, featuring technical discussions
+              and demos led by expert AWS users and industry leaders from around the world.
+            </p>
+            <p>
+              Community-based learning is the best way to enhance the concepts
+              being taught by connecting with enthusiasts in person, thereby
+              sharing first-hand experiences and familiar, accessible
+              examples.
+            </p>
+            <p>
+              All skill levels are welcome to help accomplish our motto of
+              learning, sharing and networking. Let's join hands to empower
+              this tech community to make it bigger and better!
+            </p>
+            <p>
+              <center>
+                <a href="https://meetup.com/awsugblr/" target="_blank">
+                  <i class="fa fa-meetup" aria-hidden="true" style="font-size:250%;"></i> </a>&nbsp;
+                <a href="https://x.com/awsugblr" target="_blank">
+                  <i class="fa fa-x-twitter" aria-hidden="true" style="color:orange;font-size:250%"></i> </a>&nbsp;
+                <a href="https://www.instagram.com/awsugblr" target="_blank">
+                  <i class="fa fa-instagram" aria-hidden="true" style="font-size:250%;"></i> </a>&nbsp;
+                <a href="https://www.youtube.com/@awsusergroupbengaluru1606" target="_blank">
+                  <i class="fa fa-youtube" aria-hidden="true" style="color:orange;font-size:250%"></i> </a>&nbsp;
+                <a href="https://www.linkedin.com/company/awsugblr" target="_blank">
+                  <i class="fa fa-linkedin" aria-hidden="true" style="font-size:250%"></i> </a>&nbsp;
+                <a href="https://www.threads.net/@awsugblr/" target="_blank">
+                  <i class="fa fa-threads" aria-hidden="true" style="color:orange;font-size:250%"></i>
+                </a>
+              </center>
+            </p>
+          </div>
+        </div>
+        <div class="f1 right" id="even_info">
+          <div class="right_in">
+            <h4 class="heading-ttl">
+              What to expect from AWS Community Day?
+            </h4>
+            <ul class="circle">
+              <li>
+                Renew, revive & revitalize to exemplify your excitement about
+                the work you do
+              </li>
+              <li>
+                Learn industry trends and intricacies about innovative
+                implementations from AWS experts
+              </li>
+              <li>
+                Harness the power of networking with AWS users, DevOps,
+                developers & solutions architects
+              </li>
+              <li>
+                Network with fellow AWS veterans & techies during breaks
+              </li>
+              <li>
+                Novice to pioneer on relentless pursuit to learn can rejoice
+                the AWS offerings & success stories under one roof.
+              </li>
+              <li>Take helpful and valuable information back to business</li>
+              <li>
+                Gain visibility to get more publicity for your esteemed
+                organisation
+              </li>
+              <li>
+                Sporting chance for active participants to win AWS goodies
+              </li>
+            </ul>
+          </div>
+          <br /><b>Please read the
+            <a href="code-of-conduct.html" target="_blank">Code of Conduct</a>
+            for this event</b>
+        </div>
+      </div>
+    </div>
+    
+    <div class="section section-8" id="sponsors" style="box-shadow: none; padding-bottom:0px">
+      <div class="container">
+        <h4 class="main-heading-ttl text-center">Looking Out for Sponsorship</h4>
+        <h5 style="font-size: 18px; line-height: 1.5em; padding-bottom: 10px;text-align: center;">
+          We are looking for sponsors to support our event. If you are interested in sponsoring, please check out our sponsorship details in the PDF below.
+        </h5>
+  
+        <div style="align-items: center;
+            text-align: center;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;margin-bottom:70px;">
+              <div class="f1">
+                <a href="https://drive.google.com/file/d/15d8QyaxjmlUa_XFlyLi2Y1wRrZyfExeh/view?usp=sharing" target="_blank" class="button large">Download Sponsorship Deck</a>
+              </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="section-8" id="blogathon">
+      <div class="container">
+          <div class="speakers">
+            <h4 class="main-heading-ttl text-center">BLOGATHON</h4>
+            <h4 class="blogathon-subtitle">Share your AWS journey & stand a chance to win a free ACD event ticket + exclusive surprises!</h4>
+            <p class="blogathon-date">
+              Start date: 1st March 2025
+            </p>
+            <p class="blogathon-date">
+              End date: 15 th April 2025
+            </p>
+            <div class="blogathon-button-container">
+              <div class="f1">
+                <a href="https://acdblr-blogathon.devpost.com/" target="_blank" class="button large">Submit Your Blog</a>
+              </div>
+            </div>
+      </div>
+    </div>
+    </div> -->
+
+    
+    
+
+    <div class="section section-5" id="sponsors" style="box-shadow: none; padding-bottom:0px">
+      <div class="container">
+        <div class="sponsors">
+          <h4 class="main-heading-ttl text-center">Our Esteemed Sponsors</h4>
+          <div class="cats">
+              <div class="platinum">
+                <div class="flex-it sponser-list">
+                  <div class="fhf">
+                    <div class="head"><span>Platinum</span></div>
+                  </div>
+                  <div class="f1">
+                    <div class="GP">
+                      <a href="https://www.globalization-partners.com/" target="_blank">GP</a>
+                    </div>
+                  </div>
+                  <div class="f1">
+                    <div class="NewRelic">
+                      <a href="https://newrelic.com/" target="_blank">NewRelic</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="gold">
+                <div class="flex-it sponser-list">
+                  <div class="fhf">
+                    <div class="head"><span>Gold</span></div>
+                  </div>
+                  <div class="f1">
+                    <div class="Cloudflare">
+                      <a href="https://www.cloudflare.com/" target="_blank">Cloudflare</a>
+                    </div>
+                  </div>
+                  <div class="f1">
+                    <div class="Couchbase">
+                      <a href="https://www.couchbase.com/" target="_blank">Couchbase</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="silver">
+                <div class="flex-it sponser-list">
+                  <div class="fhf">
+                    <div class="head"><span>Silver</span></div>
+                  </div>
+                  <div class="f1">
+                    <div class="Kong">
+                      <a href="https://konghq.com/" target="_blank">Kong</a>
+                    </div>
+                  </div>
+                  <div class="f1">
+                    <div class="Snowflake">
+                      <a href="https://snowflake.com/" target="_blank">Snowflake</a>
+                    </div>
+                  </div>
+                  <div class="f1">
+                    <div class="PingCap">
+                      <a href="https://www.pingcap.com/" target="_blank">PingCap</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bronze">
+                <div class="flex-it sponser-list">
+                  <div class="fhf">
+                    <div class="head"><span>Bronze</span></div>
+                  </div>
+                  <div class="f1">
+                    <div class="coderabbit" style="background-size:90%;">
+                      <a href="https://www.coderabbit.ai/" target="_blank">CodeRabbit</a>
+                    </div>  
+                  </div>
+                  <div class="f1">
+                    <div class="keploy" style="background-size:90%;">
+                      <a href="https://keploy.io/" target="_blank">Keploy</a>
+                    </div>
+                  </div>
+                  <div class="f1">
+                    <div class="lambdatest" style="background-size:90%;">
+                      <a href="https://www.lambdatest.com/" target="_blank">LambdaTest</a>
+                    </div>
+                  </div>
+                  <div class="f1">
+                    <div class="sudo" style="background-size:90%;">
+                      <a href="https://sudoconsultants.com/" target="_blank">Sudo Consultants</a>
+                    </div>  
+                  </div>
+                  
+                </div>
+              </div>
+              <div class="startup">
+                <div class="flex-it sponser-list">
+                  <div class="fhf">
+                    <div class="head"><span>Startup</span></div>
+                  </div>
+                  <div class="f1">
+                    <div class="Applogika">
+                      <a href="https://applogika.com/" target="_blank">Applogika</a>
+                    </div>
+                  </div>
+                  <div class="f1">
+                    <div class="CastAi" style="background-size:90%;">
+                      <a href="https://cast.ai/" target="_blank">Cast AI</a>
+                    </div>
+                  </div>
+                  <div class="f1">
+                    <div class="contentstack" style="background-size:90%;">
+                      <a href="https://www.contentstack.com/" target="_blank">ContentStack</a>
+                    </div>
+                  </div>
+                  <div class="f1">
+                    <div class="Meyicloud" style="background-size:90%;">
+                      <a href="https://www.meyicloud.com/for-startups" target="_blank">Meyicloud</a>
+                    </div>
+                  </div>
+                  <div class="f1">
+                    <div class="Zop" style="background-size:90%;">
+                      <a href="https://zop.dev/" target="_blank">Zop.Dev</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section section-5" id="communityPartners" style="box-shadow: none">
+      <div class="container">
+        <div class="sponsors">
+          <h4 class="main-heading-ttl text-center">Our Community Partners</h4>
+          <div class="community-partner-info">
+            <p style="font-size: 18px; line-height: 1.5em;">
+              Would like to be a community partner? Reach out to us at 
+              <a href="mailto:info@awsugblr.in" style="color: #ff9900;">info@awsugblr.in</a>
+            </p>
+          </div>
+          <div class="cats">
+            <div class="cmnty">
+              <div class="flex-it sponser-list">
+                <div class="fhf">
+                  <div class="head"><span>Community</span></div>
+                </div>
+
+                <div class="f1">
+                  <div class="awsugchennai" style="background-size:95%;">
+                    <a href="https://www.meetup.com/awsusergroup-chennai/" target="_blank">AWS UG Chennai</a>
+                  </div>
+                </div>
+
+                <div class="f1">
+                  <div class="bangpypers" style="background-size:95%;">
+                    <a href="https://www.meetup.com/bangpypers/" target="_blank">BangPyPers</a>
+                  </div>
+                </div>
+
+                <div class="f1">
+                  <div class="codeonjvm" style="background-size:95%;">
+                    <a href="https://www.linkedin.com/company/codeonjvmchennai/" target="_blank">Code On JVM</a>
+                  </div>
+                </div>
+
+                <div class="f1">
+                  <div class="contentstack" style="background-size:95%;">
+                    <a href="https://www.contentstack.com/" target="_blank">ContentStack</a>
+                  </div>
+                </div>
+                
+                <div class="f1">
+                  <div class="devrelsquad" style="background-size:95%;">
+                    <a href="https://www.devrelsquad.com/" target="_blank">DevRelSquad</a>
+                  </div>
+                </div>
+
+                <div class="f1">
+                  <div class="docker" style="background-size:95%;">
+                    <a href="https://www.meetup.com/docker-bangalore/" target="_blank">Docker, Bangalore</a>
+                  </div>
+                </div>
+
+                <div class="f1">
+                  <div class="git" style="background-size:95%;">
+                    <a href="https://github.com/gittogethers/bengaluru/" target="_blank">Git Together, Bengaluru</a>
+                  </div>
+                </div>
+
+                <div class="f1">
+                  <div class="ypieee" style="background-size:95%;">
+                    <a href="https://yp.ieeebangalore.org/" target="_blank">IEEE Young Professionals</a>
+                  </div>
+                </div>
+
+                <div class="f1">
+                  <div class="konfhub" style="background-size:95%;">
+                    <a href="https://konfhub.com/" target="_blank">KonfHub</a>
+                  </div>
+                </div>
+
+                <div class="f1">
+                  <div class="kong_community" style="background-size:95%;">
+                    <a href="https://konghq.com/community" target="_blank">Kong</a>
+                  </div>
+                </div>
+
+                <div class="f1">
+                  <div class="k8sug" style="background-size:95%;">
+                    <a href="https://k8sug.ai/" target="_blank">K8SUG</a>
+                  </div>
+                </div>
+
+                <div class="f1">
+                  <div class="mug" style="background-size:95%;">
+                    <a href="https://www.mongodb.com/community/user-groups/bengaluru/" target="_blank">MongoDB User Grop, Bengaluru</a>
+                  </div>
+                </div>
+
+                <div class="f1">
+                  <div class="neo4j" style="background-size:95%;">
+                    <a href="https://neo4j.com/" target="_blank">Neo4j</a>
+                  </div>
+                </div>
+
+                <div class="f1">
+                  <div class="pingcap_community" style="background-size:95%;">
+                    <a href="https://www.pingcap.com/" target="_blank">PingCap</a>
+                  </div>
+                </div>
+
+                <div class="f1">
+                  <div class="techxconf" style="background-size:95%;">
+                    <a href="https://techxconf.com/" target="_blank">TechXConf</a>
+                  </div>
+                </div>
+
+                <div class="f1">
+                  <div class="wip" style="background-size:95%;">
+                    <a href="https://www.womeninproductindia.com/" target="_blank">WIP, Bengaluru</a>
+                  </div>
+                </div>
+
+              
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section section-tickets text-center" id="tickets" style="background: #232f3f;">
+      <div class="container">
+        <h4 class="main-heading-ttl text-center" style="color: #fff;">Register</h4>
+        <div class="row">
+          <div class="col-md-4"></div>
+          <div class="col-md-4">
+            <div class="newcard tick_conf with_icon">
+              <h4 class="heading-ttl">CONFERENCE</h4>
+              <div class="conference-icon">
+                <img src="images/tick_conf.svg" alt="Conference Icon">
+              </div>
+              <strong class="ticket-highlight">Tickets now live—don't miss out!</strong>
+              <p class="ticket-description">Gives you access to the conference</p>
+              <p class="ticket-date">23rd May, 2025</p>
+              <div class="konfhub-widget">
+                <a href="https://konfhub.com/checkout/acdb25" target="_blank" style="display: inline-block; background-color: #F5A623; color: black; padding: 10px 40px; border-radius: 5px; text-decoration: none; font-size: 16px; font-weight: 500;">Register</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4"></div>
+        </div>
+    
+      </div>
+    </div>
+
+    <div class="section section-tickets text-center" id="workshops" style="background: #232f3f;">
+      <div class="container">
+        <h4 class="main-heading-ttl text-center" style="color: #fff;">Workshops</h4>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="newcard tick_conf with_icon" style="min-height: 320px;">
+              <h4 class="heading-ttl">Amazon Q Business in Action</h4>
+              <div class="workshop-icon">
+                <img src="images/Q.png" alt="Workshop Icon">
+              </div>
+              <p class="ticket-description">Building Enterprise-Grade Multimodal AI Applications</p>
+              <p class="ticket-date">24th May, 2025</p>
+              <div class="workshop-buttons">
+                <a href="#workshops" class="view-more-btn" data-workshop="qbusiness">More Details</a>
+                <div><script src=../widget.konfhub.com/widget.js button_id="btn_451191bbe7fa"></script></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="newcard tick_conf with_icon" style="min-height: 320px;">
+              <h4 class="heading-ttl">AWS Distro for OpenTelemetry (ADOT) for AWS Lambda functions</h4>
+              <div class="workshop-icon">
+                <img src="images/telemetry.png" alt="Workshop Icon">
+              </div>
+              <p class="ticket-description">Learn how ADOT helps with AWS Lambda for traces and metrics</p>
+              <p class="ticket-date">24th May, 2025</p>
+              <div class="workshop-buttons">
+                <a href="#workshops" class="view-more-btn" data-workshop="adot">More Details</a>
+                <div><script src=../widget.konfhub.com/widget.js button_id="btn_451191bbe7fa"></script></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="newcard tick_conf with_icon" style="min-height: 320px;">
+              <h4 class="heading-ttl">GenAI Application Development with AWS Amplify Gen 2</h4>
+              <div class="workshop-icon">
+                <img src="images/Amplify.png" alt="Workshop Icon">
+              </div>
+              <p class="ticket-description">From Frontend to Backend with AWS Amplify</p>
+              <p class="ticket-date">24th May, 2025</p>
+              <div class="workshop-buttons">
+                <a href="#workshops" class="view-more-btn" data-workshop="genai">More Details</a>
+                <div><script src=../widget.konfhub.com/widget.js button_id="btn_451191bbe7fa"></script></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="newcard tick_conf with_icon" style="min-height: 320px;">
+              <h4 class="heading-ttl">Understanding threat landscape using Threat composer</h4>
+              <div class="workshop-icon">
+                <img src="images/shield.png" alt="Workshop Icon">
+              </div>
+              <p class="ticket-description">Learn threat modeling with STRIDE framework</p>
+              <p class="ticket-date">24th May, 2025</p>
+              <div class="workshop-buttons">
+                <a href="#workshops" class="view-more-btn" data-workshop="threat">More Details</a>
+                <div><script src=../widget.konfhub.com/widget.js button_id="btn_451191bbe7fa"></script></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section section-tickets text-center" id="refund-policy" style="background: #232f3f;">
+      <div class="container">
+        <h4 class="main-heading-ttl text-center" style="color: #fff;">Refund Policy</h4>
+        <div style="display: flex; justify-content: center; align-items: center;">
+          <div style="width: 100%; max-width: 650px; margin: 0 auto;">
+            <div class="refund-details" style="color: #fff; padding: 20px; text-align: left;">
+              <div style="background: rgba(255, 255, 255, 0.05); padding: 25px; border-radius: 8px;">
+                <div style="margin-bottom: 10px;">
+                  <ul style="list-style-type: none; padding-left: 0; margin-bottom: 10px;">
+                    <li style="margin-bottom: 10px;">• 100% refund on Early bird and Super Early Bird tickets until <span style="color: #ff9900;">April 23rd,2025</span></li>
+                    <li style="margin-bottom: 10px;">• 50% refund on Regular tickets until <span style="color: #ff9900;">April 23rd,2025</span></li>
+                    <li>• No refunds on any tickets post <span style="color: #ff9900;">April 23rd,2025</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section section-3 inv" id="venues">
+      <div class="container flex-it">
+        <div class="left f1 flex-it">
+          <h4 class="headin-ttl">
+            Venues
+          </h4>
+          <div class="left_in f1">
+            <div id="map"></div>
+          </div>
+        </div>
+        <div class="right f1">
+          <div class="right_in">
+            <div class="ven-1 ven active" data-lat="12.9752091" data-lng="77.620418" data-label="Conrad Bengaluru">
+              <div class="rand_cls">
+                <span class="date_ori">23rd May 2025</span>
+                <h4 class="headin-ttl">Conference</h4>
+              </div>
+              <ul>
+                <li><b>Conrad Bengaluru,</b></li>
+                <li>25/3, Kensington Rd, Halasuru,</li>
+                <li>Someshwarpura, Bengaluru,</li>
+                <li>Karnataka 560008</li>
+              </ul>
+            </div>
+            <div class="ven-2 ven" data-lat="12.9816151" data-lng="77.6955697" data-label="Amazon Development Center">
+              <div class="rand_cls">
+                <span class="date_ori">24th May 2025</span>
+                <h4 class="headin-ttl">Workshop</h4>
+              </div>
+              <ul>
+                <li><b>Amazon Development Center, Aquila,</b></li>
+                <li>Bagmane Constellation Business Park Block-7, Ferns City,</li>
+                <li>Doddanekkundi, Bengaluru,</li>
+                <li>Karnataka 560048</li>
+              </ul>
+            </div>
+            <div class="marked"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section section-4 inv" id="agenda">
+      <div class="container">
+        <div class="sponsors">
+          <h4 class="main-heading-ttl text-center" style="color: #ff9900;">Agenda</h4>
+          <div class="text-center agenda">
+            <div class="table">
+              <div class="thead">
+                <div class="tr">
+                  <div class="th idx">
+                    <div>
+                      <p>Time</p>
+                    </div>
+                  </div>
+                  <div class="th">
+                    <div>
+                      <p>Cloud & Infra Track</p>
+                    </div>
+                  </div>
+                  <div class="th">
+                    <div>
+                      <p>Architecture & Networking Track</p>
+                    </div>
+                  </div>
+                  <div class="th">
+                    <div>
+                      <p>AI Track</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tbody">
+                <div class="tr">
+                  <div class="td idx">
+                    <div>
+                      <p>8:30 AM - 9:30 AM</p>
+                    </div>
+                  </div>
+                  <div class="td" colspan="4">
+                    <div>
+                      <p>Registrations and Networking</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tr">
+                  <div class="td idx">
+                    <div>
+                      <p>9:30 AM - 10:00 AM</p>
+                    </div>
+                  </div>
+                  <div class="td" colspan="4">
+                    <div>
+                      <p>AI and Systems Development – A State of the Union - <a href="https://www.linkedin.com/in/spraja/" target="_blank">Raja SP, Head of Developer Acceleration (DevAx) - APJ, AWS</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tr">
+                  <div class="td idx">
+                    <div>
+                      <p>10:00 AM - 10:15 AM</p>
+                    </div>
+                  </div>
+                  <div class="td" colspan="4">
+                    <div>
+                      <p>Supercharging Global HR with modernization and AI - <a href="https://www.linkedin.com/in/avnish-malik-b70000100/" target="_blank">Avnish Malik, Vice President, G-P Platform Engineering</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tr">
+                  <div class="td idx">
+                    <div>
+                      <p>10:15 AM - 10:30 AM</p>
+                    </div>
+                  </div>
+                  <div class="td" colspan="4">
+                    <div>
+                      <p>Mastering Problem Solving in Engineering with Observability - <a href="https://www.linkedin.com/in/zmrfzn/" target="_blank">Zameer Fouzan, Lead Developer Relations Engineer</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tr">
+                  <div class="td idx">
+                    <div>
+                      <p>10:30 AM - 10:45 AM</p>
+                    </div>
+                  </div>
+                  <div class="td" colspan="4">
+                    <div>
+                      <p>Building Agentic Workflows with MCP on Amazon Bedrock - <a href="https://www.linkedin.com/in/vivek0712/" target="_blank">Vivek Raja P S</a> & <a href="https://www.linkedin.com/in/avinash-dalvi-315b021a/" target="_blank">Avinash Dalvi</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tr gap">
+                  <div class="td idx">
+                    <div>
+                      <p>10:45 AM - 11:15 AM</p>
+                    </div>
+                  </div>
+                  <div class="td" colspan="4">
+                    <div>
+                      <p>Coffee & Tea Break</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tr">
+                  <div class="td idx">
+                    <div>
+                      <p>11:15 AM - 11:45 AM</p>
+                    </div>
+                  </div>
+                  <div class="td">
+                    <div>
+                      <p>Failure is Inevitable—Be Ready: Chaos Testing AWS EKS with AWS FIS</p>
+                      <p><a href="https://www.linkedin.com/in/nwaswani/" target="_blank">Naresh Waswani, Simpplr Inc. , Senior Architect</a></p>
+                      <p><a href="https://www.linkedin.com/in/jyoti-notani-05780522?utm_source=share&amp;utm_campaign=share_via&amp;utm_content=profile&amp;utm_medium=android_app" target="_blank">Jyoti Notani, Technical Lead-Persistent Systems Ltd</a></p>
+                    </div>
+                  </div>
+                  <div class="td">
+                    <div>
+                      <p>Aurora DSQL : Scaling SQL Workloads Like Never Before</p>
+                      <p><a href="https://www.linkedin.com/in/rajani103/" target="_blank">Rajani Ekunde, DevOps Engineer | Docker Captain  | Public Speaker</a></p>
+                      <p><a href="http://www.linkedin.com/in/iamrajaram1" target="_blank">Rajaram Erraguntla, CloudOps Lead, FinTech Company</a></p>
+                    </div>
+                  </div>
+                  <div class="td">
+                    <div>
+                      <p>Agentic AI in Banking: The Game-Changer for AML & Risk Management</p>
+                      <p><a href="https://www.linkedin.com/in/jawabpm" target="_blank">Jawahar Govindaraj, Global Practice Delivery Head - AI , Low Code and Emerging Tech</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tr">
+                  <div class="td idx">
+                    <div>
+                      <p>11:45 AM - 12:15 PM</p>
+                    </div>
+                  </div>
+                  <div class="td">
+                    <div>
+                      <p>The Ultimate AWS Landing Zone Blueprint: How to Tame 1000+ Accounts Without Losing Your Mind</p>
+                      <p><a href="https://www.linkedin.com/in/jatinmehrotra/" target="_blank">Jatin Mehrotra, Senior DevOps Engineer@Colorkrew</a></p>
+                    </div>
+                  </div>
+                  <div class="td">
+                    <div>
+                      <p>Designing Multi-tenant architectures in AWS : Approaches, Best Practices, and Gotchas</p>
+                      <p><a href="https://www.linkedin.com/in/turjac591/" target="_blank">Turja Narayan Chaudhuri, Global Platform PreSales Leader, Big4 Consulting</a></p>
+                    </div>
+                  </div>
+                  <div class="td">
+                    <div>
+                      <p>AI-Powered Insights: Real-Time Data Streaming to AI/ML Pipelines with Solace PubSub+ and AWS</p>
+                      <p><a href="https://www.linkedin.com/in/girivenkatesan/" target="_blank">Giri Venkatesan, Principal Developer Advocate, Office of the CTO at Solace</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tr">
+                  <div class="td idx">
+                    <div>
+                      <p>12:15 PM - 12:45 PM</p>
+                    </div>
+                  </div>
+                  <div class="td">
+                    <div>
+                      <p>Green Code: Sustainable Practices for AWS Technologists</p>
+                      <p><a href="https://www.linkedin.com/in/dixitashutosh007/" target="_blank">Ashutosh Dixit, AWS Ambassador, Senior Director, LTIMINDTREE</a></p>
+                    </div>
+                  </div>
+                  <div class="td">
+                    <div>
+                      <p>Mastering AWS Networking: From VPCs to Global Connectivity - A Holistic Approach</p>
+                      <p><a href="https://www.linkedin.com/in/adit-n-modi/" target="_blank">Adit Modi, Solution Architect at Lauren</a></p>
+                    </div>
+                  </div>
+                  <div class="td">
+                    <div>
+                      <p>Autonomous Knowledge Agents: Building a Next-Gen RAG System with AWS Bedrock, Claude, Lambda & S3</p>
+                      <p><a href="https://www.linkedin.com/in/shubhamagnihotri17/" target="_blank">Shubham Agnihotri, Senior Manager - Generative AI - IDFC Bank</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tr">
+                  <div class="td idx">
+                    <div>
+                      <p>12:45 PM - 1:15 PM</p>
+                    </div>
+                  </div>
+                  <div class="td">
+                    <div>
+                      <p>Surviving an EKS Disaster: How We Recovered from a Cluster Meltdown</p>
+                      <p><a href="https://www.linkedin.com/in/bvsrao-venkat-4014133b/" target="_blank">Venkata Subbarao, Corporate Trainer</a></p>
+                    </div>
+                  </div>
+                  <div class="td">
+                    <div>
+                      <p>Advanced AWS Cost Optimization Strategies: Going Beyond RI and Savings Plans</p>
+                      <p><a href="https://www.linkedin.com/in/aditya-r-koundinya/" target="_blank">Aditya R Koundinya, Presidio, Senior Engineer - Cloud and DevOps</a></p>
+                      <p><a href="https://www.linkedin.com/in/lalith-yvlk/" target="_blank">Yadlapalli Venkata Lalith Kumar, Presidio, Senior Engineer - Cloud and DevOps</a></p>
+                      <p><a href="https://www.linkedin.com/in/hariharan-krishnamurthi-b70000100/" target="_blank">Hariharan Krishnamurthi, Presidio, Lead Engineer - Cloud and DevOps</a></p>
+                    </div>
+                  </div>
+                  <div class="td">
+                    <div>
+                      <p>AWS Multiagent orchestration</p>
+                      <p><a href="#" target="_blank">Mohamed Fazil, AI Associate Engineer , Office of CTO Unisys</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tr gap">
+                  <div class="td idx">
+                    <div>
+                      <p>1:15 PM - 2:15 PM</p>
+                    </div>
+                  </div>
+                  <div class="td" colspan="4">
+                    <div>
+                      <p>Lunch</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tr">
+                  <div class="td idx">
+                    <div>
+                      <p>2:15 PM - 2:30 PM</p>
+                    </div>
+                  </div>
+                  <div class="td">
+                    <div>
+                      <p>Managed Kong Gateways with AWS</p>
+                      <p><a href="https://www.linkedin.com/in/piyush-baderia-b70000100/" target="_blank">Piyush Baderia, Senior SRE, Managed Gateways - KongHQ</a></p>
+                    </div>
+                  </div>
+                  <div class="td">
+                    <div>
+                      <p>From Startup to Scale-Up: Your Database's Growth Journey</p>
+                      <p><a href="https://www.linkedin.com/in/ankit-kapoor-69298318/" target="_blank">Ankit Kapoor, Senior Database Architect with TiDB</a></p>
+                    </div>
+                  </div>
+                  <div class="td">
+                    <div>
+                      <p>Agents! Smarter Workflows with Cloudflare</p>
+                      <p><a href="https://www.linkedin.com/in/iamask/" target="_blank">Ajay Sasikumar, Solutions Engineering</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tr">
+                  <div class="td idx">
+                    <div>
+                      <p>2:30 PM - 2:45 PM</p>
+                    </div>
+                  </div>
+                  <div class="td">
+                    <div>
+                      <p>The Art of Saving Smart: How Contentstack Cuts AWS Costs Without Cutting Corners</p>
+                      <p><a href="https://www.linkedin.com/in/gaurav-purandare-b85ba042" target="_blank">Gaurav Purandare, Manager - Cloud Operations, Contentstack</a></p>
+                    </div>
+                  </div>
+                  <div class="td">
+                    <div>
+                      <p>Who is the AWS Community Builders program for and why should you join it?</p>
+                      <p><a href="https://www.linkedin.com/in/jasonrobertdunn/" target="_blank">Jason Dunn, AWS Community Builders Program Manager</a></p>
+                    </div>
+                  </div>
+                  <div class="td">
+                    <div>
+                      <p>Building Semantic AI Agents using Bedrock Agents and Couchbase</p>
+                      <p><a href="https://linkedin.com/in/shivaylamba" target="_blank">Shivay Lamba, Senior Software Engineer</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tr">
+                  <div class="td idx">
+                    <div>
+                      <p>2:45 PM - 3:15 PM</p>
+                    </div>
+                  </div>
+                  <div class="td">
+                    <div>
+                      <p>Serverless Deployment and E2E Testing with AWS CDK and SDK</p>
+                      <p><a href="https://www.linkedin.com/in/vidit-shah/" target="_blank">Vidit Shah, Founder and Lead Architect at ServerlessCreed</a></p>
+                    </div>
+                  </div>
+                  <div class="td">
+                    <div>
+                      <p>PII Data Management with AWS Lake Formation</p>
+                      <p><a href="https://www.linkedin.com/in/ankitpsheth/" target="_blank">Ankit Sheth, Founder & CEO</a></p>
+                    </div>
+                  </div>
+                  <div class="td">
+                    <div>
+                      <p>When GenAI meets Ancient Wisdom</p>
+                      <p><a href="https://linkedin.com/in/sidagarwal04" target="_blank">Siddhant Agarwal, Developer Relations Lead APAC @ Neo4j</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tr">
+                  <div class="td idx">
+                    <div>
+                      <p>3:15 PM - 3:45 PM</p>
+                    </div>
+                  </div>
+                  <div class="td">
+                    <div>
+                      <p>From detection to response: Automated Forensic Orchestrator for Amazon EC2 Instances</p>
+                      <p><a href="https://www.linkedin.com/in/sankalp-s-paranjpe/" target="_blank">Sankalp Sandeep Paranjpe, DevSecOps Engineer @ Intangles Lab | Former AWS Cloud Captain</a></p>
+                    </div>
+                  </div>
+                  <div class="td">
+                    <div>
+                      <p>Unleashing the secrets to performance tuning of AWS Aurora</p>
+                      <p><a href="https://www.linkedin.com/in/narayana-jayaram-73223511/" target="_blank">Narayana Jayaram, Publicis Sapient, Database Architect</a></p>
+                      <p><a href="#" target="_blank">Sushmitha Mendon, Senior Database Associate</a></p>
+                    </div>
+                  </div>
+                  <div class="td">
+                    <div>
+                      <p>Supercharging FinTech Operations with Multi-Agent Systems on Amazon Bedrock</p>
+                      <p><a href="https://www.linkedin.com/in/suresh-sala-b70000100/" target="_blank">Suresh Sala, Staff SRE @AngelOne</a></p>
+                      <p><a href="https://www.linkedin.com/in/yogishkutkunjepai" target="_blank">Yogish Pai, Sr. Solutions Architect, AWS India</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tr gap ">
+                  <div class="td idx">
+                    <div>
+                      <p>3:45 PM - 4:15 PM</p>
+                    </div>
+                  </div>
+                  <div class="td" colspan="4">
+                    <div>
+                      <p>Coffee & Tea Break</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tr">
+                  <div class="td idx">
+                    <div>
+                      <p>4:15 PM - 5:00 PM</p>
+                    </div>
+                  </div>
+                  <div class="td" colspan="4">
+                    <div>
+                      <p>Panel Discussion</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tr">
+                  <div class="td idx">
+                    <div>
+                      <p>5:00 PM - 5:30 PM</p>
+                    </div>
+                  </div>
+                  <div class="td" colspan="4">
+                    <div>
+                      <p>Vote of Thanks</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section section-5 inv" id="speakers">
+      <h4 id="Keynote_Speakers" class="main-heading-ttl text-center" style="color:#232f3e;">Keynote Speaker</h4>
+      <div class="container">
+        <div class="speaker-card">
+          <div class="speaker-content">
+            <div class="speaker-image-container">
+              <img class="speaker-image" 
+                   alt="Raja" 
+                   title="Raja" 
+                   src="images/vols/acd-bengaluru-2024/Speakers/Raja.jpg">
+            </div>
+            <div class="speaker-details">
+              <div class="speaker-talk">
+                <h3 class="talk-title">AI and Systems Development – A State of the Union</h3>
+                <div class="speaker-info">
+                  <h4 class="speaker-name">
+                    Raja SP
+                    <a href="https://www.linkedin.com/in/spraja/" target="_blank" class="speaker-social">
+                      <i class="icon large ion-logo-linkedin"></i>
+                    </a>
+                  </h4>
+                  <p class="speaker-designation">Head of Developer Acceleration (DevAx) - APJ, AWS</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h4 id="Keynote_Speakers" class="main-heading-ttl text-center" style="color:#232f3e;">Community Keynote Speaker</h4>
+      <div class="container">
+        <div class="speaker-card">
+          <div class="speaker-content">
+            <div class="speaker-image-container">
+              <img class="speaker-image" 
+                   alt="Sandeep" 
+                   title="Sandeep" 
+                   src="images/vols/acd-bengaluru-2024/Speakers/Sandeep.png">
+            </div>
+            <div class="speaker-details">
+              <div class="speaker-talk">
+                <h3 class="talk-title">Sit Next to Me Tomorrow: A Story of Barriers, Bridges, and the Power of Community</h3>
+                <div class="speaker-info">
+                  <h4 class="speaker-name">
+                    Sandeep Kanabar
+                    <a href="https://www.linkedin.com/in/sandeepkanabar/" target="_blank" class="speaker-social">
+                      <i class="icon large ion-logo-linkedin"></i>
+                    </a>
+                  </h4>
+                  <p class="speaker-designation">Lead Software Engineer, Gen (formerly NortonLifeLock)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-8" id="speakers">
+      <div class="container">
+          <div class="speakers">
+            <h4 class="main-heading-ttl text-center">Speakers</h4>
+            <div class="spk_lst flex-it ">
+              <div class="spk_itm_col" id="speakersContainer">
+
+               
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  
+    <div class="section section-4 "  id="sessions">
+      <div class="container">
+        <div class="sponsors">
+          <h4 class="main-heading-ttl text-center" style="color:#ff9900; ">Sessions</h4>
+          <div class="text-center agenda">
+            <div class="table">
+              <div class="tbody" id="sessionList" >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Session Details Modal -->
+    <div class="modal fade" id="sessionModal" tabindex="-1" role="dialog" aria-labelledby="sessionModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header" style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+            <h5 class="modal-title" id="sessionModalLabel" style="margin: 0; text-align: left; font-size: 20px;">Session Details</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin-left: auto;">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <h4 id="sessionTitle"></h4>
+            <div id="sessionSpeakers"></div>
+            <div id="sessionTags" class="mt-3" style="margin-top: 15px;"></div>
+            <hr style="margin: 20px 0; border-top: 1px solid #eee;">
+            <div id="sessionDescription" class="mt-3"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Workshop Details Modal -->
+    <div class="modal fade" id="workshopModal" tabindex="-1" role="dialog" aria-labelledby="workshopModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header" style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+            <h5 class="modal-title" id="workshopModalLabel" style="margin: 0; text-align: left; font-size: 20px;">Workshop Details</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin-left: auto;">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <h4 id="workshopTitle"></h4>
+            <div id="workshopFacilitator" class="mt-3"></div>
+            <div id="workshopDescription" class="mt-3"></div>
+            <div id="workshopPrerequisites" class="mt-3"></div>
+            <div id="workshopAgenda" class="mt-3"></div>
+            <div id="workshopTarget" class="mt-3"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      .view-more-btn {
+        background-color: transparent;
+        color: black;
+        border: 1px solid #F5A623;
+        padding: 10px 40px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: 500;
+        transition: background-color 0.3s ease;
+        font-size: 16px;
+        text-align: center;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 200px;
+        text-decoration: none;
+      }
+
+      .workshop-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 15px;
+        position: absolute;
+        bottom: 15px;
+        left: 0;
+        right: 0;
+        padding: 0 15px;
+      }
+
+      .newcard {
+        position: relative;
+        padding-bottom: 60px;
+        margin-bottom: 30px;
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      }
+
+      .newcard .heading-ttl {
+        font-size: 16px;
+        margin: 12px 0;
+        padding: 0 15px;
+        line-height: 1.3;
+        height: 42px;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+      }
+
+      .newcard .ticket-description {
+        padding: 0 15px;
+        margin-bottom: 8px;
+        font-size: 14px;
+        height: 40px;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+      }
+
+      .newcard .ticket-date {
+        padding: 0 15px;
+        margin-bottom: 8px;
+        font-size: 14px;
+        color: #666;
+      }
+
+      .workshop-icon {
+        padding: 15px 0;
+      }
+
+      .workshop-icon img {
+        max-width: 60px;
+        height: auto;
+      }
+      
+      /* Modal improvements */
+      body.modal-open {
+        overflow: hidden;
+        position: fixed;
+        width: 100%;
+      }
+      
+      .modal {
+        padding-right: 0 !important;
+      }
+      
+      .modal-backdrop {
+        opacity: 0.8 !important;
+      }
+      
+      .modal-content {
+        border-radius: 10px;
+        border: none;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      }
+      
+      .modal-header {
+        border-bottom: 1px solid #eee;
+        padding: 15px 20px;
+        background-color: #f8f8f8;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+      
+      .modal-body {
+        padding: 20px;
+        max-height: 75vh;
+        overflow-y: auto;
+      }
+      
+      .close {
+        font-size: 30px;
+        opacity: 0.7;
+      }
+      
+      .close:hover {
+        opacity: 1;
+      }
+
+      @media (max-width: 768px) {
+        .workshop-buttons {
+          position: relative;
+          bottom: auto;
+          flex-direction: column;
+          align-items: center;
+          margin-top: 15px;
+          padding: 0;
+        }
+        
+        .view-more-btn {
+          width: 100%;
+          margin-bottom: 8px;
+        }
+
+        .newcard {
+          padding-bottom: 15px;
+        }
+
+        .newcard .heading-ttl {
+          height: auto;
+          -webkit-line-clamp: 3;
+        }
+
+        .newcard .ticket-description {
+          height: auto;
+          -webkit-line-clamp: 3;
+        }
+        
+        .modal-body {
+          max-height: 80vh;
+        }
+      }
+    </style>
+
+    <script>
+      // Load workshop data from workshops.json
+      document.addEventListener('DOMContentLoaded', function() {
+        // Variable to store scroll position
+        let savedScrollPosition;
+        
+        fetch('workshops.json')
+          .then(response => response.json())
+          .then(data => {
+            // Handle workshop modal
+            document.querySelectorAll('.view-more-btn').forEach(btn => {
+              btn.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                // Save current scroll position
+                savedScrollPosition = window.scrollY || document.documentElement.scrollTop;
+                
+                const workshopId = this.getAttribute('data-workshop');
+                const workshop = data.workshops[workshopId];
+                
+                if (workshop) {
+                  document.getElementById('workshopTitle').innerHTML = `<strong>${workshop.title}</strong>`;
+                  
+                  // Update facilitator section with new design
+                  const facilitator = workshop.facilitator;
+                  document.getElementById('workshopFacilitator').innerHTML = `
+                    <div class="session-speakers-container">
+                      <div class="session-speaker">
+                        <img class="session-speaker-image" src="${facilitator.image}" alt="${facilitator.name}">
+                        <div class="session-speaker-details">
+                          <p class="session-speaker-name">${facilitator.name}</p>
+                          <p class="session-speaker-tagline">${facilitator.title}</p>
+                          <a href="${facilitator.linkedin}" target="_blank" class="session-speaker-linkedin">
+                            <i class="icon ion-logo-linkedin"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  `;
+                  
+                  document.getElementById('workshopDescription').innerHTML = `
+                    <p><strong>Description:</strong></p>
+                    <p style="white-space: pre-line;">${workshop.description}</p>
+                  `;
+                  
+                  let prerequisitesHtml = '<strong>Prerequisites:</strong><ul>';
+                  workshop.prerequisites.forEach(prereq => {
+                    prerequisitesHtml += `<li>${prereq}</li>`;
+                  });
+                  prerequisitesHtml += '</ul>';
+                  document.getElementById('workshopPrerequisites').innerHTML = prerequisitesHtml;
+                  
+                  let agendaHtml = '<strong>Agenda:</strong><ul>';
+                  workshop.agenda.forEach(item => {
+                    agendaHtml += `<li>${item}</li>`;
+                  });
+                  agendaHtml += '</ul>';
+                  document.getElementById('workshopAgenda').innerHTML = agendaHtml;
+                  
+                  let targetHtml = '<strong>Target Audience:</strong><ul>';
+                  workshop.targetAudience.forEach(target => {
+                    targetHtml += `<li>${target}</li>`;
+                  });
+                  targetHtml += '</ul>';
+                  document.getElementById('workshopTarget').innerHTML = targetHtml;
+                  
+                  // Show modal with proper settings
+                  $('#workshopModal').modal({
+                    backdrop: 'static',
+                    keyboard: true,
+                    show: true
+                  });
+                }
+              });
+            });
+
+            // Modal event handlers
+            $('#workshopModal').on('show.bs.modal', function() {
+              // Apply a class to fix body scrolling just before modal shows
+              $('body').addClass('modal-open-fixed');
+              $('body').css({
+                'position': 'fixed',
+                'width': '100%',
+                'top': -savedScrollPosition + 'px'
+              });
+            });
+            
+            $('#workshopModal').on('hidden.bs.modal', function() {
+              // Remove the fixed class after modal is hidden
+              $('body').removeClass('modal-open-fixed');
+              $('body').css({
+                'position': '',
+                'width': '',
+                'top': ''
+              });
+              
+              // Restore scroll position
+              window.scrollTo(0, savedScrollPosition);
+            });
+          })
+          .catch(error => console.error('Error loading workshop data:', error));
+      });
+    </script>
+
+    <div class="section-6 inv" id="volunteers">
+      <div class="container">
+        <div class="volunteers">
+          <h4 class="main-heading-ttl text-center">Volunteers</h4>
+          <div class="vl-row-list">
+            <div class="vl-i  flex-it hcenter">
+              <div class="person" data-fname="Avinash" data-lname="Dalvi">
+                <div class="img">
+                  <a target="_blank" href="https://www.linkedin.com/in/avinash-dalvi-315b021a/">
+                    <i class="icon large ion-logo-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="person" data-fname="Ayyanar" data-lname="Jeyakrishnan">
+                <div class="img">
+                  <a target="_blank" href="https://www.linkedin.com/in/jayyanar/">
+                    <i class="icon large ion-logo-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="person" data-fname="Bhuvaneswari" data-lname="Subramani">
+                <div class="img">
+                  <a target="_blank" href="https://www.linkedin.com/in/bhuvanas/">
+                    <i class="icon large ion-logo-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="person" data-fname="Ganesh" data-lname="Samarthyam">
+                <div class="img">
+                  <a target="_blank" href="https://www.linkedin.com/in/ganeshsamarthyam/">
+                    <i class="icon large ion-logo-linkedin"></i></a>
+                </div>
+              </div>
+   
+              <div class="person" data-fname="Hari" data-lname="Kiran">
+                <div class="img">
+                  <a target="_blank" href="https://www.linkedin.com/in/gharikiran/">
+                    <i class="icon large ion-logo-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="person" data-fname="Harsha" data-lname="RamaKrishna">
+                <div class="img">
+                  <a target="_blank" href="https://www.linkedin.com/in/harshar/">
+                    <i class="icon large ion-logo-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="person" data-fname="Jones" data-lname="Zachariah Noel N">
+                <div class="img">
+                  <a target="_blank" href="https://www.linkedin.com/in/jones-zachariah-noel-n">
+                    <i class="icon large ion-logo-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="person" data-fname="Logesh" data-lname="S">
+                <div class="img">
+                  <a target="_blank" href="https://www.linkedin.com/in/logeshs182/">
+                    <i class="icon large ion-logo-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="person" data-fname="Poobalan" data-lname="P">
+                <div class="img">
+                  <a target="_blank" href="https://www.linkedin.com/in/poobalan-p/">
+                    <i class="icon large ion-logo-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="person" data-fname="Srushith" data-lname="R">
+                <div class="img">
+                  <a target="_blank" href="https://www.linkedin.com/in/srushith/">
+                    <i class="icon large ion-logo-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="person" data-fname="Ramya" data-lname="Natesan">
+                <div class="img">
+                  <a target="_blank" href="http://linkedin.com/in/ramya-natesan-67499711a">
+                    <i class="icon large ion-logo-linkedin"></i></a>
+                </div>
+              </div>
+
+              <div class="person" data-fname="Vivek Raja" data-lname="P S">
+                <div class="img">
+                  <a target="_blank" href="https://www.linkedin.com/in/vivek0712/">
+                    <i class="icon large ion-logo-linkedin"></i></a>
+                </div>
+              </div>
+      
+              <div class="person" data-fname="Vijaya" data-lname="Nirmala">
+                <div class="img">
+                  <a target="_blank" href="https://www.linkedin.com/in/vijayanirmalagopal/">
+                    <i class="icon large ion-logo-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+    <div class="bottom-footer text-center">
+      <div class="container">
+        <div class="col-lg-12">
+          <span>For any queries reach out to </span><a href="mailto:info@awsugblr.in ">info@awsugblr.in </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/intlTelInput.js"></script>
+  <script type="text/javascript" src="js/site.js"></script>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC37Zz0TDOai4q9Wzajzg5AUoOt7ZDILCs&amp;callback=initMap"></script>
+  <script>
+    var latt = 12.9752091;
+    var lngg = 77.620418;
+    var venue = "Conrad Bengaluru";
+
+    function setCoords(latt, lngg, venue) {
+      this.latt = latt;
+      this.lngg = lngg;
+      this.venue = venue;
+      initMap();
+      $(this).addClass("hello");
+    }
+    function initMap() {
+      var uluru = { lat: latt, lng: lngg };
+      var map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 15,
+        center: uluru,
+        scrollwheel: false
+      });
+      var markerIcon = {
+        url: "https://ik.imagekit.io/rw020j6tr/placeholder%20(1)_NmyB50Act.png?updatedAt=1710437468973",
+        scaledSize: new google.maps.Size(50, 50),
+        origin: new google.maps.Point(0, 0),
+        anchor: new google.maps.Point(32, 65),
+        labelOrigin: new google.maps.Point(25, 70)
+      };
+      var markerLabel = venue;
+      var marker = new google.maps.Marker({
+        map: map,
+        animation: google.maps.Animation.DROP,
+        position: uluru,
+        icon: markerIcon,
+        disableDefaultUI: false,
+        label: {
+          text: markerLabel,
+          color: "#eb3a44",
+          fontSize: "16px",
+          fontWeight: "bold"
+        }
+      });
+    }
+  </script>
+  <script>
+    // Load session data from data.json
+    document.addEventListener('DOMContentLoaded', function() {
+      fetch('data.json')
+        .then(response => response.json())
+        .then(data => {
+          const sessionList = document.getElementById('sessionList');
+          const sessions = data.sessions;
+          const speakers = data.speakers;
+          const categories = data.categories;
+
+          // Clear any existing content
+          sessionList.innerHTML = '';
+
+          sessions.forEach(session => {
+            const sessionElement = document.createElement('div');
+            sessionElement.className = 'tr';
+            sessionElement.innerHTML = `
+              <div class="td" colspan="4">
+                <div>
+                  <button type="button" class="session-btn" data-session-id="${session.id}">
+                    ${session.title}
+                  </button>
+                </div>
+              </div>
+            `;
+            sessionList.appendChild(sessionElement);
+          });
+
+          // Set up session button handlers once all buttons are created
+          setupSessionButtonHandlers(sessions, speakers, categories);
+        })
+        .catch(error => console.error('Error loading session data:', error));
+    });
+
+    // Consolidated function to handle session buttons and modal display
+    function setupSessionButtonHandlers(sessions, speakers, categories) {
+      console.log('Setting up session button handlers');
+      
+      // Find tags category
+      const tagsCategory = categories.find(cat => cat.title === "Tags");
+      
+      // Add click handlers for session buttons
+      document.querySelectorAll('.session-btn').forEach(btn => {
+        btn.addEventListener('click', function(e) {
+          e.preventDefault();
+          e.stopPropagation();
+          
+          // Capture scroll position and make it available for the global modal handlers
+          window.modalScrollPosition = window.scrollY || window.pageYOffset;
+          
+          // Show the overlay immediately
+          const overlay = document.querySelector('.modal-backdrop-custom');
+          if (overlay) overlay.classList.add('show');
+          
+          const sessionId = this.getAttribute('data-session-id');
+          const session = sessions.find(s => s.id === sessionId);
+          
+          if (session) {
+            // Get speaker details
+            let speakersHtml = '<div class="session-speakers-container">';
+            
+            session.speakers.forEach(speakerId => {
+              const speaker = speakers.find(s => s.id === speakerId);
+              if (speaker) {
+                const linkedInUrl = speaker.links && speaker.links.find(link => link.linkType === 'LinkedIn')?.url || '#';
+                speakersHtml += `
+                  <div class="session-speaker">
+                    <img class="session-speaker-image" src="${speaker.profilePicture}" alt="${speaker.fullName}">
+                    <div class="session-speaker-details">
+                      <p class="session-speaker-name">${speaker.fullName}</p>
+                      <p class="session-speaker-tagline">${speaker.tagLine}</p>
+                      <a href="${linkedInUrl}" target="_blank" class="session-speaker-linkedin">
+                        <i class="icon ion-logo-linkedin"></i>
+                      </a>
+                    </div>
+                  </div>
+                `;
+              }
+            });
+            
+            speakersHtml += '</div>';
+
+            // Get tag details
+            let tagsHtml = '';
+            if (tagsCategory && session.categoryItems && session.categoryItems.length > 0) {
+              tagsHtml = '<div class="session-tags"><strong>Tags:</strong> ';
+              
+              const tagNames = session.categoryItems.map(itemId => {
+                const tagItem = tagsCategory.items.find(item => item.id === itemId);
+                return tagItem ? tagItem.name : '';
+              }).filter(Boolean);
+              
+              if (tagNames.length > 0) {
+                tagsHtml += tagNames.map(tag => 
+                  `<span class="tag-pill">${tag}</span>`
+                ).join(' ');
+              } else {
+                tagsHtml += '<span>No tags available</span>';
+              }
+              tagsHtml += '</div>';
+            }
+
+            // Update modal content
+            document.getElementById('sessionTitle').textContent = session.title;
+            document.getElementById('sessionSpeakers').innerHTML = speakersHtml;
+            document.getElementById('sessionTags').innerHTML = tagsHtml;
+            document.getElementById('sessionDescription').innerHTML = `
+              <p><strong>Description:</strong></p>
+              <p>${session.description.replace(/\r\n/g, '<br>')}</p>
+            `;
+
+            // Show modal with backdrop static to prevent closing on background click
+            $('#sessionModal').modal({
+              backdrop: 'static',
+              keyboard: true,
+              show: true
+            });
+          }
+        });
+      });
+      
+      // Sessions now use the global modal handlers defined below for managing overlay and scroll position
+    }
+  </script>
+
+<script>
+  // Function to fetch speaker data and populate the section
+  async function loadSpeakers() {
+    try {
+      const response = await fetch('data.json');
+      const data = await response.json();
+      const speakersContainer = document.getElementById('speakersContainer');
+      
+      // Clear existing content
+      speakersContainer.innerHTML = '';
+      
+      // Populate speakers from data
+      data.speakers
+      .filter(speaker => speaker.fullName !== "Sandeep Kanabar" && speaker.fullName !== "Jemiah Sius" && speaker.fullName !== "Raja SP" )
+      .forEach(speaker => {
+        const speakerItem = document.createElement('div');
+        speakerItem.className = 'spk_itm flex-it';
+        
+        speakerItem.innerHTML = `
+          <div class="prod_im"><img src="${speaker.profilePicture}" alt="${speaker.fullName}"></div>
+          <div class="namenid">
+            <p>
+              <b>${speaker.firstName} ${speaker.lastName}</b>
+              <br>
+              <small>${speaker.tagLine}</small>
+            </p>
+          </div>
+        `;
+        
+        speakersContainer.appendChild(speakerItem);
+      });
+    } catch (error) {
+      console.error('Error loading speaker data:', error);
+    }
+  }
+  
+  // Load speakers when the page is ready
+  document.addEventListener('DOMContentLoaded', loadSpeakers);
+</script>
+  <div class="floating-register-btn">
+    <a href="https://konfhub.com/checkout/acdb25" target="_blank">
+      <img src="gifs/register-gif-42.gif" alt="Register Now">
+    </a>
+  </div>
+  <script>
+    // Function to handle scroll behavior for floating register button
+    function handleScroll() {
+      const floatingBtn = document.querySelector('.floating-register-btn');
+      const landingSection = document.querySelector('.section-1');
+      const landingSectionHeight = landingSection.offsetHeight;
+      const scrollPosition = window.scrollY || window.pageYOffset;
+
+      // Show button when scrolled past the landing section
+      if (scrollPosition > landingSectionHeight) {
+        floatingBtn.classList.add('visible');
+      } else {
+        floatingBtn.classList.remove('visible');
+      }
+    }
+
+    // Add scroll event listener
+    window.addEventListener('scroll', handleScroll);
+    // Initial check
+    handleScroll();
+    
+    // Improved modal behavior with custom overlay
+    $(document).ready(function() {
+      // Get the custom overlay element
+      const overlay = document.querySelector('.modal-backdrop-custom');
+      
+      // Workshop modal specific handling
+      $('.view-more-btn').on('click', function(e) {
+        // Capture scroll position immediately
+        window.modalScrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+        
+        // Show the overlay immediately
+        overlay.classList.add('show');
+      });
+      
+      // When any modal is about to be shown
+      $('.modal').on('show.bs.modal', function () {
+        // Save the current scroll position if not already saved
+        if (window.modalScrollPosition === undefined) {
+          window.modalScrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+        }
+        
+        // Show the overlay
+        overlay.classList.add('show');
+      });
+      
+      // When any modal is fully shown
+      $('.modal').on('shown.bs.modal', function () {
+        // Lock the body scroll
+        document.body.classList.add('modal-lock');
+        document.body.style.top = -window.modalScrollPosition + 'px';
+      });
+      
+      // Keep the overlay visible during modal close to prevent flash
+      $('.modal').on('hide.bs.modal', function () {
+        // The overlay will stay visible throughout the transition
+      });
+      
+      // After the modal is fully hidden
+      $('.modal').on('hidden.bs.modal', function () {
+        // Unlock body and restore position
+        document.body.classList.remove('modal-lock');
+        document.body.style.top = '';
+        
+        // Restore scroll position
+        window.scrollTo(0, window.modalScrollPosition);
+        
+        // Short delay before hiding overlay to prevent flash
+        setTimeout(function() {
+          overlay.classList.remove('show');
+        }, 100);
+      });
+    });
+  </script>
+
+  <!-- Custom overlay to prevent page flashing during modal transitions -->
+  <div class="modal-backdrop-custom"></div>
+</body>
+</html>
