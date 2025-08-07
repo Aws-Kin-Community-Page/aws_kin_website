@@ -50,6 +50,9 @@
   <!-- <script type="text/javascript"
     src="https://platform-api.sharethis.com/js/sharethis.js#property=630e27bafd193a0013760206&product=sticky-share-buttons"></script> -->
   <link rel="manifest" href="manifest.json" />
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
   <!-- Google analytics integration -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-FSG8BN7WV5"></script>
   <script>
@@ -251,6 +254,24 @@
       transition: transform 0.2s ease-out !important;
     }
   </style>
+
+  <style>
+  .badge {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 9999px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 8px;
+    color: white;
+  }
+  .badge-archi { background-color: #1f77b4; }     /* Architectural & Networking */
+  .badge-ai { background-color: #ff7f0e; }        /* AI */
+  .badge-cloud { background-color: #2ca02c; }     /* Cloud & Infra */
+  .badge-audit { background-color: #9467bd; }     /* Audit */
+  .badge-cyber { background-color: #d62728; }     /* Cybersécurité */
+</style>
+
 </head>
 <body>
   <div id="page">
@@ -573,112 +594,52 @@
               <a href="mailto:info@awsugblr.in" style="color: #ff9900;">info@awsugblr.in</a>
             </p>
           </div>
-          <div class="cats">
-            <div class="cmnty">
-              <div class="flex-it sponser-list">
-                <div class="fhf">
-                  <div class="head"><span>Community</span></div>
-                </div>
 
-                <div class="f1">
-                  <div class="awsugchennai" style="background-size:95%;">
-                    <a href="https://www.meetup.com/awsusergroup-chennai/" target="_blank">AWS UG Chennai</a>
-                  </div>
-                </div>
 
-                <div class="f1">
-                  <div class="bangpypers" style="background-size:95%;">
-                    <a href="https://www.meetup.com/bangpypers/" target="_blank">BangPyPers</a>
-                  </div>
-                </div>
-
-                <div class="f1">
-                  <div class="codeonjvm" style="background-size:95%;">
-                    <a href="https://www.linkedin.com/company/codeonjvmchennai/" target="_blank">Code On JVM</a>
-                  </div>
-                </div>
-
-                <div class="f1">
-                  <div class="contentstack" style="background-size:95%;">
-                    <a href="https://www.contentstack.com/" target="_blank">ContentStack</a>
-                  </div>
-                </div>
-                
-                <div class="f1">
-                  <div class="devrelsquad" style="background-size:95%;">
-                    <a href="https://www.devrelsquad.com/" target="_blank">DevRelSquad</a>
-                  </div>
-                </div>
-
-                <div class="f1">
-                  <div class="docker" style="background-size:95%;">
-                    <a href="https://www.meetup.com/docker-bangalore/" target="_blank">Docker, Bangalore</a>
-                  </div>
-                </div>
-
-                <div class="f1">
-                  <div class="git" style="background-size:95%;">
-                    <a href="https://github.com/gittogethers/bengaluru/" target="_blank">Git Together, Bengaluru</a>
-                  </div>
-                </div>
-
-                <div class="f1">
-                  <div class="ypieee" style="background-size:95%;">
-                    <a href="https://yp.ieeebangalore.org/" target="_blank">IEEE Young Professionals</a>
-                  </div>
-                </div>
-
-                <div class="f1">
-                  <div class="konfhub" style="background-size:95%;">
-                    <a href="https://konfhub.com/" target="_blank">KonfHub</a>
-                  </div>
-                </div>
-
-                <div class="f1">
-                  <div class="kong_community" style="background-size:95%;">
-                    <a href="https://konghq.com/community" target="_blank">Kong</a>
-                  </div>
-                </div>
-
-                <div class="f1">
-                  <div class="k8sug" style="background-size:95%;">
-                    <a href="https://k8sug.ai/" target="_blank">K8SUG</a>
-                  </div>
-                </div>
-
-                <div class="f1">
-                  <div class="mug" style="background-size:95%;">
-                    <a href="https://www.mongodb.com/community/user-groups/bengaluru/" target="_blank">MongoDB User Grop, Bengaluru</a>
-                  </div>
-                </div>
-
-                <div class="f1">
-                  <div class="neo4j" style="background-size:95%;">
-                    <a href="https://neo4j.com/" target="_blank">Neo4j</a>
-                  </div>
-                </div>
-
-                <div class="f1">
-                  <div class="pingcap_community" style="background-size:95%;">
-                    <a href="https://www.pingcap.com/" target="_blank">PingCap</a>
-                  </div>
-                </div>
-
-                <div class="f1">
-                  <div class="techxconf" style="background-size:95%;">
-                    <a href="https://techxconf.com/" target="_blank">TechXConf</a>
-                  </div>
-                </div>
-
-                <div class="f1">
-                  <div class="wip" style="background-size:95%;">
-                    <a href="https://www.womeninproductindia.com/" target="_blank">WIP, Bengaluru</a>
-                  </div>
-                </div>
-
+          <div class="bg-white py-10 px-6">
+            <h2 class="text-2xl font-bold mb-6 text-center">Community Sponsors</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
               
-                
-              </div>
+              <a href="#" target="_blank" class="flex items-center justify-center h-24 p-4 rounded border border-sm">
+                 <img src="images/community-partners/aws-community-group.jpg" target="_blank" class="flex items-center justify-center h-24 p-4">
+              </a>
+
+              <a href="#" target="_blank" class="flex items-center justify-center h-24 p-4 rounded border border-sm">
+                 <img src="images/community-partners/aws-logo.jpg" target="_blank" class="flex items-center justify-center h-24 p-4">
+              </a>
+
+               <a href="#" target="_blank" class="flex items-center justify-center h-24 p-4 rounded border border-sm">
+                 <img src="images/community-partners/logo-orange.jpg" target="_blank" class="flex items-center justify-center h-24 p-4">
+              </a>
+
+               <a href="#" target="_blank" class="flex items-center justify-center h-24 p-4 rounded border border-sm">
+                 <img src="images/community-partners/logo-odc.jpg" target="_blank" class="flex items-center justify-center h-24 p-4">
+              </a>
+
+               <a href="#" target="_blank" class="flex items-center justify-center h-24 p-4 rounded border border-sm">
+                 <img src="images/community-partners/faithful-logo.jpg" target="_blank" class="flex items-center justify-center h-24 p-4">
+              </a>
+
+               <a href="#" target="_blank" class="flex items-center justify-center h-24 p-4 rounded border border-sm">
+                 <img src="images/community-partners/fortinet-logo.jpg" target="_blank" class="flex items-center justify-center h-24 p-4">
+              </a>
+
+              <a href="#" target="_blank" class="flex items-center justify-center h-24 p-4 rounded border border-sm">
+                 <img src="images/community-partners/le-cloud-facile.jpg" target="_blank" class="flex items-center justify-center h-24 p-4">
+              </a>
+
+              <a href="#" target="_blank" class="flex items-center justify-center h-24 p-4 rounded border border-sm">
+                 <img src="images/community-partners/logo-aws-training-and-certification.jpg" target="_blank" class="flex items-center justify-center h-24 p-4">
+              </a>
+
+               <a href="#" target="_blank" class="flex items-center justify-center h-24 p-4 rounded border border-sm">
+                 <img src="images/community-partners/logo-aws-community-builder.jpg" target="_blank" class="flex items-center justify-center h-24 p-4">
+              </a>
+
+               <a href="#" target="_blank" class="flex items-center justify-center h-24 p-4 rounded border border-sm">
+                 <img src="images/community-partners/logo-kubestronault.jpg" target="_blank" class="flex items-center justify-center h-24 p-4">
+              </a>
+              
             </div>
           </div>
         </div>
@@ -836,7 +797,7 @@
       </div>
     </div>
 
-    <div class="section section-4 inv" id="agenda">
+   <div class="section section-4 inv" id="agenda">
       <div class="container">
         <div class="sponsors">
           <h4 class="main-heading-ttl text-center" style="color: #ff9900;">Agenda</h4>
@@ -844,361 +805,83 @@
             <div class="table">
               <div class="thead">
                 <div class="tr">
-                  <div class="th idx">
-                    <div>
-                      <p>Time</p>
-                    </div>
-                  </div>
-                  <div class="th">
-                    <div>
-                      <p>Cloud & Infra Track</p>
-                    </div>
-                  </div>
-                  <div class="th">
-                    <div>
-                      <p>Architecture & Networking Track</p>
-                    </div>
-                  </div>
-                  <div class="th">
-                    <div>
-                      <p>AI Track</p>
-                    </div>
-                  </div>
+                  <div class="th idx"><div><p>Heure</p></div></div>
+                  <div class="th" colspan="4"><div><p>Programme de la journée</p></div></div>
                 </div>
               </div>
               <div class="tbody">
-                <div class="tr">
-                  <div class="td idx">
-                    <div>
-                      <p>8:30 AM - 9:30 AM</p>
-                    </div>
-                  </div>
-                  <div class="td" colspan="4">
-                    <div>
-                      <p>Registrations and Networking</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="tr">
-                  <div class="td idx">
-                    <div>
-                      <p>9:30 AM - 10:00 AM</p>
-                    </div>
-                  </div>
-                  <div class="td" colspan="4">
-                    <div>
-                      <p>AI and Systems Development – A State of the Union - <a href="https://www.linkedin.com/in/spraja/" target="_blank">Raja SP, Head of Developer Acceleration (DevAx) - APJ, AWS</a></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="tr">
-                  <div class="td idx">
-                    <div>
-                      <p>10:00 AM - 10:15 AM</p>
-                    </div>
-                  </div>
-                  <div class="td" colspan="4">
-                    <div>
-                      <p>Supercharging Global HR with modernization and AI - <a href="https://www.linkedin.com/in/avnish-malik-b70000100/" target="_blank">Avnish Malik, Vice President, G-P Platform Engineering</a></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="tr">
-                  <div class="td idx">
-                    <div>
-                      <p>10:15 AM - 10:30 AM</p>
-                    </div>
-                  </div>
-                  <div class="td" colspan="4">
-                    <div>
-                      <p>Mastering Problem Solving in Engineering with Observability - <a href="https://www.linkedin.com/in/zmrfzn/" target="_blank">Zameer Fouzan, Lead Developer Relations Engineer</a></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="tr">
-                  <div class="td idx">
-                    <div>
-                      <p>10:30 AM - 10:45 AM</p>
-                    </div>
-                  </div>
-                  <div class="td" colspan="4">
-                    <div>
-                      <p>Building Agentic Workflows with MCP on Amazon Bedrock - <a href="https://www.linkedin.com/in/vivek0712/" target="_blank">Vivek Raja P S</a> & <a href="https://www.linkedin.com/in/avinash-dalvi-315b021a/" target="_blank">Avinash Dalvi</a></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="tr gap">
-                  <div class="td idx">
-                    <div>
-                      <p>10:45 AM - 11:15 AM</p>
-                    </div>
-                  </div>
-                  <div class="td" colspan="4">
-                    <div>
-                      <p>Coffee & Tea Break</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="tr">
-                  <div class="td idx">
-                    <div>
-                      <p>11:15 AM - 11:45 AM</p>
-                    </div>
-                  </div>
-                  <div class="td">
-                    <div>
-                      <p>Failure is Inevitable—Be Ready: Chaos Testing AWS EKS with AWS FIS</p>
-                      <p><a href="https://www.linkedin.com/in/nwaswani/" target="_blank">Naresh Waswani, Simpplr Inc. , Senior Architect</a></p>
-                      <p><a href="https://www.linkedin.com/in/jyoti-notani-05780522?utm_source=share&amp;utm_campaign=share_via&amp;utm_content=profile&amp;utm_medium=android_app" target="_blank">Jyoti Notani, Technical Lead-Persistent Systems Ltd</a></p>
-                    </div>
-                  </div>
-                  <div class="td">
-                    <div>
-                      <p>Aurora DSQL : Scaling SQL Workloads Like Never Before</p>
-                      <p><a href="https://www.linkedin.com/in/rajani103/" target="_blank">Rajani Ekunde, DevOps Engineer | Docker Captain  | Public Speaker</a></p>
-                      <p><a href="http://www.linkedin.com/in/iamrajaram1" target="_blank">Rajaram Erraguntla, CloudOps Lead, FinTech Company</a></p>
-                    </div>
-                  </div>
-                  <div class="td">
-                    <div>
-                      <p>Agentic AI in Banking: The Game-Changer for AML & Risk Management</p>
-                      <p><a href="https://www.linkedin.com/in/jawabpm" target="_blank">Jawahar Govindaraj, Global Practice Delivery Head - AI , Low Code and Emerging Tech</a></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="tr">
-                  <div class="td idx">
-                    <div>
-                      <p>11:45 AM - 12:15 PM</p>
-                    </div>
-                  </div>
-                  <div class="td">
-                    <div>
-                      <p>The Ultimate AWS Landing Zone Blueprint: How to Tame 1000+ Accounts Without Losing Your Mind</p>
-                      <p><a href="https://www.linkedin.com/in/jatinmehrotra/" target="_blank">Jatin Mehrotra, Senior DevOps Engineer@Colorkrew</a></p>
-                    </div>
-                  </div>
-                  <div class="td">
-                    <div>
-                      <p>Designing Multi-tenant architectures in AWS : Approaches, Best Practices, and Gotchas</p>
-                      <p><a href="https://www.linkedin.com/in/turjac591/" target="_blank">Turja Narayan Chaudhuri, Global Platform PreSales Leader, Big4 Consulting</a></p>
-                    </div>
-                  </div>
-                  <div class="td">
-                    <div>
-                      <p>AI-Powered Insights: Real-Time Data Streaming to AI/ML Pipelines with Solace PubSub+ and AWS</p>
-                      <p><a href="https://www.linkedin.com/in/girivenkatesan/" target="_blank">Giri Venkatesan, Principal Developer Advocate, Office of the CTO at Solace</a></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="tr">
-                  <div class="td idx">
-                    <div>
-                      <p>12:15 PM - 12:45 PM</p>
-                    </div>
-                  </div>
-                  <div class="td">
-                    <div>
-                      <p>Green Code: Sustainable Practices for AWS Technologists</p>
-                      <p><a href="https://www.linkedin.com/in/dixitashutosh007/" target="_blank">Ashutosh Dixit, AWS Ambassador, Senior Director, LTIMINDTREE</a></p>
-                    </div>
-                  </div>
-                  <div class="td">
-                    <div>
-                      <p>Mastering AWS Networking: From VPCs to Global Connectivity - A Holistic Approach</p>
-                      <p><a href="https://www.linkedin.com/in/adit-n-modi/" target="_blank">Adit Modi, Solution Architect at Lauren</a></p>
-                    </div>
-                  </div>
-                  <div class="td">
-                    <div>
-                      <p>Autonomous Knowledge Agents: Building a Next-Gen RAG System with AWS Bedrock, Claude, Lambda & S3</p>
-                      <p><a href="https://www.linkedin.com/in/shubhamagnihotri17/" target="_blank">Shubham Agnihotri, Senior Manager - Generative AI - IDFC Bank</a></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="tr">
-                  <div class="td idx">
-                    <div>
-                      <p>12:45 PM - 1:15 PM</p>
-                    </div>
-                  </div>
-                  <div class="td">
-                    <div>
-                      <p>Surviving an EKS Disaster: How We Recovered from a Cluster Meltdown</p>
-                      <p><a href="https://www.linkedin.com/in/bvsrao-venkat-4014133b/" target="_blank">Venkata Subbarao, Corporate Trainer</a></p>
-                    </div>
-                  </div>
-                  <div class="td">
-                    <div>
-                      <p>Advanced AWS Cost Optimization Strategies: Going Beyond RI and Savings Plans</p>
-                      <p><a href="https://www.linkedin.com/in/aditya-r-koundinya/" target="_blank">Aditya R Koundinya, Presidio, Senior Engineer - Cloud and DevOps</a></p>
-                      <p><a href="https://www.linkedin.com/in/lalith-yvlk/" target="_blank">Yadlapalli Venkata Lalith Kumar, Presidio, Senior Engineer - Cloud and DevOps</a></p>
-                      <p><a href="https://www.linkedin.com/in/hariharan-krishnamurthi-b70000100/" target="_blank">Hariharan Krishnamurthi, Presidio, Lead Engineer - Cloud and DevOps</a></p>
-                    </div>
-                  </div>
-                  <div class="td">
-                    <div>
-                      <p>AWS Multiagent orchestration</p>
-                      <p><a href="#" target="_blank">Mohamed Fazil, AI Associate Engineer , Office of CTO Unisys</a></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="tr gap">
-                  <div class="td idx">
-                    <div>
-                      <p>1:15 PM - 2:15 PM</p>
-                    </div>
-                  </div>
-                  <div class="td" colspan="4">
-                    <div>
-                      <p>Lunch</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="tr">
-                  <div class="td idx">
-                    <div>
-                      <p>2:15 PM - 2:30 PM</p>
-                    </div>
-                  </div>
-                  <div class="td">
-                    <div>
-                      <p>Managed Kong Gateways with AWS</p>
-                      <p><a href="https://www.linkedin.com/in/piyush-baderia-b70000100/" target="_blank">Piyush Baderia, Senior SRE, Managed Gateways - KongHQ</a></p>
-                    </div>
-                  </div>
-                  <div class="td">
-                    <div>
-                      <p>From Startup to Scale-Up: Your Database's Growth Journey</p>
-                      <p><a href="https://www.linkedin.com/in/ankit-kapoor-69298318/" target="_blank">Ankit Kapoor, Senior Database Architect with TiDB</a></p>
-                    </div>
-                  </div>
-                  <div class="td">
-                    <div>
-                      <p>Agents! Smarter Workflows with Cloudflare</p>
-                      <p><a href="https://www.linkedin.com/in/iamask/" target="_blank">Ajay Sasikumar, Solutions Engineering</a></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="tr">
-                  <div class="td idx">
-                    <div>
-                      <p>2:30 PM - 2:45 PM</p>
-                    </div>
-                  </div>
-                  <div class="td">
-                    <div>
-                      <p>The Art of Saving Smart: How Contentstack Cuts AWS Costs Without Cutting Corners</p>
-                      <p><a href="https://www.linkedin.com/in/gaurav-purandare-b85ba042" target="_blank">Gaurav Purandare, Manager - Cloud Operations, Contentstack</a></p>
-                    </div>
-                  </div>
-                  <div class="td">
-                    <div>
-                      <p>Who is the AWS Community Builders program for and why should you join it?</p>
-                      <p><a href="https://www.linkedin.com/in/jasonrobertdunn/" target="_blank">Jason Dunn, AWS Community Builders Program Manager</a></p>
-                    </div>
-                  </div>
-                  <div class="td">
-                    <div>
-                      <p>Building Semantic AI Agents using Bedrock Agents and Couchbase</p>
-                      <p><a href="https://linkedin.com/in/shivaylamba" target="_blank">Shivay Lamba, Senior Software Engineer</a></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="tr">
-                  <div class="td idx">
-                    <div>
-                      <p>2:45 PM - 3:15 PM</p>
-                    </div>
-                  </div>
-                  <div class="td">
-                    <div>
-                      <p>Serverless Deployment and E2E Testing with AWS CDK and SDK</p>
-                      <p><a href="https://www.linkedin.com/in/vidit-shah/" target="_blank">Vidit Shah, Founder and Lead Architect at ServerlessCreed</a></p>
-                    </div>
-                  </div>
-                  <div class="td">
-                    <div>
-                      <p>PII Data Management with AWS Lake Formation</p>
-                      <p><a href="https://www.linkedin.com/in/ankitpsheth/" target="_blank">Ankit Sheth, Founder & CEO</a></p>
-                    </div>
-                  </div>
-                  <div class="td">
-                    <div>
-                      <p>When GenAI meets Ancient Wisdom</p>
-                      <p><a href="https://linkedin.com/in/sidagarwal04" target="_blank">Siddhant Agarwal, Developer Relations Lead APAC @ Neo4j</a></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="tr">
-                  <div class="td idx">
-                    <div>
-                      <p>3:15 PM - 3:45 PM</p>
-                    </div>
-                  </div>
-                  <div class="td">
-                    <div>
-                      <p>From detection to response: Automated Forensic Orchestrator for Amazon EC2 Instances</p>
-                      <p><a href="https://www.linkedin.com/in/sankalp-s-paranjpe/" target="_blank">Sankalp Sandeep Paranjpe, DevSecOps Engineer @ Intangles Lab | Former AWS Cloud Captain</a></p>
-                    </div>
-                  </div>
-                  <div class="td">
-                    <div>
-                      <p>Unleashing the secrets to performance tuning of AWS Aurora</p>
-                      <p><a href="https://www.linkedin.com/in/narayana-jayaram-73223511/" target="_blank">Narayana Jayaram, Publicis Sapient, Database Architect</a></p>
-                      <p><a href="#" target="_blank">Sushmitha Mendon, Senior Database Associate</a></p>
-                    </div>
-                  </div>
-                  <div class="td">
-                    <div>
-                      <p>Supercharging FinTech Operations with Multi-Agent Systems on Amazon Bedrock</p>
-                      <p><a href="https://www.linkedin.com/in/suresh-sala-b70000100/" target="_blank">Suresh Sala, Staff SRE @AngelOne</a></p>
-                      <p><a href="https://www.linkedin.com/in/yogishkutkunjepai" target="_blank">Yogish Pai, Sr. Solutions Architect, AWS India</a></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="tr gap ">
-                  <div class="td idx">
-                    <div>
-                      <p>3:45 PM - 4:15 PM</p>
-                    </div>
-                  </div>
-                  <div class="td" colspan="4">
-                    <div>
-                      <p>Coffee & Tea Break</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="tr">
-                  <div class="td idx">
-                    <div>
-                      <p>4:15 PM - 5:00 PM</p>
-                    </div>
-                  </div>
-                  <div class="td" colspan="4">
-                    <div>
-                      <p>Panel Discussion</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="tr">
-                  <div class="td idx">
-                    <div>
-                      <p>5:00 PM - 5:30 PM</p>
-                    </div>
-                  </div>
-                  <div class="td" colspan="4">
-                    <div>
-                      <p>Vote of Thanks</p>
-                    </div>
-                  </div>
-                </div>
+
+                <div class="tr"><div class="td idx"><div><p>08:30 - 09:30</p></div></div>
+                  <div class="td" colspan="4"><div><p>Accueil, enregistrement et mise en place</p></div></div></div>
+
+                <div class="tr"><div class="td idx"><div><p>09:30 - 10:00</p></div></div>
+                  <div class="td" colspan="4"><div><p><strong>Discours d'ouverture</strong> - <em>Gilbert Mboma</em></p></div></div></div>
+
+                <div class="tr"><div class="td idx"><div><p>10:00 - 10:45</p></div></div>
+                  <div class="td" colspan="4"><div>
+                    <p><strong>Stratégies pour attirer les fournisseurs cloud en RDC</strong> - <em>D.G Open Access</em>
+                    <span class="badge badge-cloud">Cloud & Infra</span></p>
+                  </div></div></div>
+
+                <div class="tr"><div class="td idx"><div><p>10:45 - 11:30</p></div></div>
+                  <div class="td" colspan="4"><div>
+                    <p><strong>Autonomous Knowledge Agents : RAG appliqué à AWS</strong> - <em>Sébastien Stormark</em>
+                    <span class="badge badge-ai">AI</span></p>
+                  </div></div></div>
+
+                <div class="tr"><div class="td idx"><div><p>11:30 - 12:30</p></div></div>
+                  <div class="td" colspan="4"><div>
+                    <p><strong>Panel Cybersécurité :</strong> Stratégies de protection numérique dans les secteurs bancaire et télécom
+                    <span class="badge badge-cyber">Cybersécurité</span></p>
+                    <p><em>Malls Kahilu, Landrick Mponyo, Arnauld Nzailu</em></p>
+                    <p><strong>Modérateur :</strong> John Bezika</p>
+                  </div></div></div>
+
+                <div class="tr gap"><div class="td idx"><div><p>12:30 - 13:00</p></div></div>
+                  <div class="td" colspan="4"><div><p>Pause déjeuner</p></div></div></div>
+
+                <div class="tr"><div class="td idx"><div><p>13:00 - 13:30</p></div></div>
+                  <div class="td" colspan="4"><div>
+                    <p><strong>Hacking éthique : défis et réalités en Afrique</strong> - <em>John Bezika</em>
+                    <span class="badge badge-cyber">Cybersécurité</span></p>
+                  </div></div></div>
+
+                <div class="tr"><div class="td idx"><div><p>13:30 - 14:00</p></div></div>
+                  <div class="td" colspan="4"><div>
+                    <p><strong>Construire une stratégie "Zero Trust" efficace avec AWS</strong> - <em>Ham Pacifique</em>
+                    <span class="badge badge-cyber">Cybersécurité</span></p>
+                  </div></div></div>
+
+                <div class="tr"><div class="td idx"><div><p>14:00 - 14:45</p></div></div>
+                  <div class="td" colspan="4"><div>
+                    <p><strong>Panel Audit :</strong> Sécurisation, gouvernance et conformité dans le cloud AWS
+                    <span class="badge badge-audit">Audit</span></p>
+                    <p><em>Armel Mumbere & Modeste Kamanda</em></p>
+                  </div></div></div>
+
+                <div class="tr"><div class="td idx"><div><p>14:45 - 15:15</p></div></div>
+                  <div class="td" colspan="4"><div>
+                    <p><strong>From Code to Customers :</strong> Construire une infrastructure scalable, sécurisée et optimisée IA avec AWS & IaC
+                    <span class="badge badge-archi">Architectural & Networking</span>
+                    <span class="badge badge-ai">AI</span></p>
+                    <p><em>Emmanuel Naweji</em></p>
+                  </div></div></div>
+
+                <div class="tr"><div class="td idx"><div><p>15:15 - 16:00</p></div></div>
+                  <div class="td" colspan="4"><div>
+                    <p><strong>Implémentation d’architectures haute disponibilité sur AWS</strong> - <em>Mbula Mbula</em>
+                    <span class="badge badge-archi">Architectural & Networking</span></p>
+                  </div></div></div>
+
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+   </div>
+
+
+
 
     <div class="section section-5 inv" id="speakers">
       <h4 id="Keynote_Speakers" class="main-heading-ttl text-center" style="color:#232f3e;">Keynote Speaker</h4>
@@ -1213,15 +896,15 @@
             </div>
             <div class="speaker-details">
               <div class="speaker-talk">
-                <h3 class="talk-title">AI and Systems Development – A State of the Union</h3>
+                <h3 class="talk-title">Architecte Cloud AWS, Developpeur</h3>
                 <div class="speaker-info">
                   <h4 class="speaker-name">
-                    Raja SP
+                    Gilbert Mboma
                     <a href="https://www.linkedin.com/in/spraja/" target="_blank" class="speaker-social">
                       <i class="icon large ion-logo-linkedin"></i>
                     </a>
                   </h4>
-                  <p class="speaker-designation">Head of Developer Acceleration (DevAx) - APJ, AWS</p>
+                  <p class="speaker-designation">AWS Restart Specialist chez Orange</p>
                 </div>
               </div>
             </div>
