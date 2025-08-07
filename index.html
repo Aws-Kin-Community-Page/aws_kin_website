@@ -270,6 +270,239 @@
   .badge-cloud { background-color: #2ca02c; }     /* Cloud & Infra */
   .badge-audit { background-color: #9467bd; }     /* Audit */
   .badge-cyber { background-color: #d62728; }     /* Cybersécurité */
+
+  /* Footer Styles */
+  .footer-section {
+    background: linear-gradient(135deg, #232f3e 0%, #1a2533 100%);
+    color: #ffffff;
+    padding: 60px 0 0;
+    font-family: 'Amazon Ember', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .footer-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #ff9900 0%, #f2c12e 100%);
+  }
+
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+  }
+
+  .footer-col {
+    padding: 0 15px;
+  }
+
+  .footer-title {
+    color: #ff9900;
+    font-size: 1.25rem;
+    margin-bottom: 25px;
+    position: relative;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  .footer-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 2px;
+    background: #ff9900;
+  }
+
+  .footer-logo {
+    margin-bottom: 20px;
+  }
+
+  .footer-about p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    opacity: 0.9;
+  }
+
+  .footer-nav {
+    list-style: none;
+    padding: 0;
+  }
+
+  .footer-nav li {
+    margin-bottom: 12px;
+  }
+
+  .footer-link {
+    color: #ffffff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+    padding-left: 15px;
+    opacity: 0.9;
+    display: inline-block;
+  }
+
+  .footer-link::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: #ff9900;
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+
+  .footer-link:hover {
+    color: #ff9900;
+    padding-left: 20px;
+    opacity: 1;
+  }
+
+  .footer-link:hover::before {
+    opacity: 1;
+    left: -5px;
+  }
+
+  .footer-contact-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .footer-contact-list li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    opacity: 0.9;
+  }
+
+  .footer-contact-list i {
+    color: #ff9900;
+    margin-right: 12px;
+    width: 20px;
+    text-align: center;
+    font-size: 1.1rem;
+  }
+
+  .footer-contact-list a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .footer-contact-list a:hover {
+    color: #ff9900;
+  }
+
+  .footer-social {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+  }
+
+  .footer-social a {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.1);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+  }
+
+  .footer-social a:hover {
+    background: #ff9900;
+    color: #232f3e;
+    transform: translateY(-3px);
+  }
+
+  .footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 25px 0;
+    text-align: center;
+  }
+
+  .footer-copyright p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+    opacity: 0.8;
+  }
+
+  .disclaimer {
+    font-size: 0.75rem !important;
+    opacity: 0.6 !important;
+    max-width: 700px;
+    margin: 10px auto 0 !important;
+  }
+
+  /* Animations */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .footer-col {
+    animation: fadeInUp 0.6s ease forwards;
+    opacity: 0;
+  }
+
+  .footer-col:nth-child(1) { animation-delay: 0.1s; }
+  .footer-col:nth-child(2) { animation-delay: 0.2s; }
+  .footer-col:nth-child(3) { animation-delay: 0.3s; }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .footer-grid {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+    
+    .footer-col {
+      text-align: center;
+    }
+    
+    .footer-title::after {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    
+    .footer-social {
+      justify-content: center;
+    }
+    
+    .footer-contact-list {
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .footer-contact-list li {
+      justify-content: center;
+    }
+  }
+  
 </style>
 
 </head>
@@ -318,23 +551,13 @@
             </li> 
             <li>
               <a href="#refund-policy">Politiques de remboursement</a>
-            </li>
-            <li>
-              <a href="#sessions">Sessions</a>
-            </li>   
+            </li> 
             <li>
               <a href="#speakers">Conférencier</a>
             </li> 
             <li>
               <a href="#sponsors">Sponsors</a>
-            </li>
-            <li>
-              <a href="#volunteers">Volontaires</a>
-            </li>
-            <li>
-              <a href="#workshops">Ateliers</a>
-            </li>
-            
+            </li>    
             <li>
               <a href="code-of-conduct.html">Code de conduite</a>
             </li>
@@ -430,7 +653,7 @@
             margin-left: auto;
             margin-right: auto;margin-bottom:70px;">
               <div class="f1">
-                <a href="https://drive.google.com/file/d/15d8QyaxjmlUa_XFlyLi2Y1wRrZyfExeh/view?usp=sharing" target="_blank" class="button large">Téléchargez le dossier de parrainage</a>
+                <a href="#" target="_blank" class="button large">Téléchargez le dossier de parrainage</a>
               </div>
         </div>
       </div>
@@ -587,11 +810,11 @@
     <div class="section section-5" id="communityPartners" style="box-shadow: none">
       <div class="container">
         <div class="sponsors">
-          <h4 class="main-heading-ttl text-center">Our Community Partners</h4>
+          <h4 class="main-heading-ttl text-center">NOS PARTENAIRES</h4>
           <div class="community-partner-info">
             <p style="font-size: 18px; line-height: 1.5em;">
-              Would like to be a community partner? Reach out to us at 
-              <a href="mailto:info@awsugblr.in" style="color: #ff9900;">info@awsugblr.in</a>
+              Voulez-vous devenir partenaire? Contactez-nous
+              <a href="mailto:info@awsugblr.in" style="color: #ff9900;">info@aws-community-kin.com</a>
             </p>
           </div>
 
@@ -647,7 +870,7 @@
     </div>
     <div class="section section-tickets text-center" id="tickets" style="background: #232f3f;">
       <div class="container">
-        <h4 class="main-heading-ttl text-center" style="color: #fff;">Register</h4>
+        <h4 class="main-heading-ttl text-center" style="color: #fff;">S'enregistrer</h4>
         <div class="row">
           <div class="col-md-4"></div>
           <div class="col-md-4">
@@ -656,9 +879,8 @@
               <div class="conference-icon">
                 <img src="images/tick_conf.svg" alt="Conference Icon">
               </div>
-              <strong class="ticket-highlight">Tickets now live—don't miss out!</strong>
-              <p class="ticket-description">Gives you access to the conference</p>
-              <p class="ticket-date">23rd May, 2025</p>
+              <strong class="ticket-highlight">Enrégistrez-vous maintenant pour participer au community day!</strong>
+              <p class="ticket-date">22 Novembre 2025</p>
               <div class="konfhub-widget">
                 <a href="https://konfhub.com/checkout/acdb25" target="_blank" style="display: inline-block; background-color: #F5A623; color: black; padding: 10px 40px; border-radius: 5px; text-decoration: none; font-size: 16px; font-weight: 500;">Register</a>
               </div>
@@ -769,28 +991,24 @@
           <div class="right_in">
             <div class="ven-1 ven active" data-lat="12.9752091" data-lng="77.620418" data-label="Conrad Bengaluru">
               <div class="rand_cls">
-                <span class="date_ori">23rd May 2025</span>
-                <h4 class="headin-ttl">Conference</h4>
+                <span class="date_ori">22 Novembre 2025</span>
+                <h4 class="headin-ttl">Community Day</h4>
               </div>
               <ul>
-                <li><b>Conrad Bengaluru,</b></li>
-                <li>25/3, Kensington Rd, Halasuru,</li>
-                <li>Someshwarpura, Bengaluru,</li>
-                <li>Karnataka 560008</li>
+                <li><b>Silikin Village,</b></li>
+                <li>1 Avenue Colonel Mondjiba,</li>
+                <li>Ngaliema, Kinshasa,</li>
+                <li>République Démocratique du Congo</li>
               </ul>
             </div>
-            <div class="ven-2 ven" data-lat="12.9816151" data-lng="77.6955697" data-label="Amazon Development Center">
-              <div class="rand_cls">
-                <span class="date_ori">24th May 2025</span>
-                <h4 class="headin-ttl">Workshop</h4>
-              </div>
-              <ul>
-                <li><b>Amazon Development Center, Aquila,</b></li>
-                <li>Bagmane Constellation Business Park Block-7, Ferns City,</li>
-                <li>Doddanekkundi, Bengaluru,</li>
-                <li>Karnataka 560048</li>
-              </ul> 
-            </div> 
+            <div class="ven-2 ven" data-lat="12.9816151" data-lng="300" data-label="Amazon Development Center" style="margin-top: 100px;">
+              <ul class="text-gray-700 space-y-1">
+                <li><b>Une journée dédiée à l’innovation,</b></li>
+                <li>à travers des conférences animées par des experts du cloud,</li>
+                <li>de la cybersécurité, de l’IA et bien plus.</li>
+                <li>Rejoignez la communauté AWS pour apprendre, réseauter et évoluer.</li>
+              </ul>
+            </div>
             <div class="marked"></div>
           </div>
         </div>
@@ -798,7 +1016,7 @@
     </div>
 
    <div class="section section-4 inv" id="agenda">
-      <div class="container">
+      <div class="container" style="margin-left: 40px;">
         <div class="sponsors">
           <h4 class="main-heading-ttl text-center" style="color: #ff9900;">Agenda</h4>
           <div class="text-center agenda">
@@ -892,7 +1110,7 @@
               <img class="speaker-image" 
                    alt="Raja" 
                    title="Raja" 
-                   src="images/vols/acd-bengaluru-2024/Speakers/Raja.jpg">
+                   src="images/speakers-images/Gilbert Mboma.jpg">
             </div>
             <div class="speaker-details">
               <div class="speaker-talk">
@@ -905,33 +1123,6 @@
                     </a>
                   </h4>
                   <p class="speaker-designation">AWS Restart Specialist chez Orange</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <h4 id="Keynote_Speakers" class="main-heading-ttl text-center" style="color:#232f3e;">Community Keynote Speaker</h4>
-      <div class="container">
-        <div class="speaker-card">
-          <div class="speaker-content">
-            <div class="speaker-image-container">
-              <img class="speaker-image" 
-                   alt="Sandeep" 
-                   title="Sandeep" 
-                   src="images/vols/acd-bengaluru-2024/Speakers/Sandeep.png">
-            </div>
-            <div class="speaker-details">
-              <div class="speaker-talk">
-                <h3 class="talk-title">Sit Next to Me Tomorrow: A Story of Barriers, Bridges, and the Power of Community</h3>
-                <div class="speaker-info">
-                  <h4 class="speaker-name">
-                    Sandeep Kanabar
-                    <a href="https://www.linkedin.com/in/sandeepkanabar/" target="_blank" class="speaker-social">
-                      <i class="icon large ion-logo-linkedin"></i>
-                    </a>
-                  </h4>
-                  <p class="speaker-designation">Lead Software Engineer, Gen (formerly NortonLifeLock)</p>
                 </div>
               </div>
             </div>
@@ -1273,108 +1464,87 @@
           .catch(error => console.error('Error loading workshop data:', error));
       });
     </script> -->
+  </div>
 
-    <div class="section-6 inv" id="volunteers">
-      <div class="container">
-        <div class="volunteers">
-          <h4 class="main-heading-ttl text-center">Volunteers</h4>
-          <div class="vl-row-list">
-            <div class="vl-i  flex-it hcenter">
-              <div class="person" data-fname="Avinash" data-lname="Dalvi">
-                <div class="img">
-                  <a target="_blank" href="https://www.linkedin.com/in/avinash-dalvi-315b021a/">
-                    <i class="icon large ion-logo-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="person" data-fname="Ayyanar" data-lname="Jeyakrishnan">
-                <div class="img">
-                  <a target="_blank" href="https://www.linkedin.com/in/jayyanar/">
-                    <i class="icon large ion-logo-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="person" data-fname="Bhuvaneswari" data-lname="Subramani">
-                <div class="img">
-                  <a target="_blank" href="https://www.linkedin.com/in/bhuvanas/">
-                    <i class="icon large ion-logo-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="person" data-fname="Ganesh" data-lname="Samarthyam">
-                <div class="img">
-                  <a target="_blank" href="https://www.linkedin.com/in/ganeshsamarthyam/">
-                    <i class="icon large ion-logo-linkedin"></i></a>
-                </div>
-              </div>
-   
-              <div class="person" data-fname="Hari" data-lname="Kiran">
-                <div class="img">
-                  <a target="_blank" href="https://www.linkedin.com/in/gharikiran/">
-                    <i class="icon large ion-logo-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="person" data-fname="Harsha" data-lname="RamaKrishna">
-                <div class="img">
-                  <a target="_blank" href="https://www.linkedin.com/in/harshar/">
-                    <i class="icon large ion-logo-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="person" data-fname="Jones" data-lname="Zachariah Noel N">
-                <div class="img">
-                  <a target="_blank" href="https://www.linkedin.com/in/jones-zachariah-noel-n">
-                    <i class="icon large ion-logo-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="person" data-fname="Logesh" data-lname="S">
-                <div class="img">
-                  <a target="_blank" href="https://www.linkedin.com/in/logeshs182/">
-                    <i class="icon large ion-logo-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="person" data-fname="Poobalan" data-lname="P">
-                <div class="img">
-                  <a target="_blank" href="https://www.linkedin.com/in/poobalan-p/">
-                    <i class="icon large ion-logo-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="person" data-fname="Srushith" data-lname="R">
-                <div class="img">
-                  <a target="_blank" href="https://www.linkedin.com/in/srushith/">
-                    <i class="icon large ion-logo-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="person" data-fname="Ramya" data-lname="Natesan">
-                <div class="img">
-                  <a target="_blank" href="http://linkedin.com/in/ramya-natesan-67499711a">
-                    <i class="icon large ion-logo-linkedin"></i></a>
-                </div>
-              </div>
-
-              <div class="person" data-fname="Vivek Raja" data-lname="P S">
-                <div class="img">
-                  <a target="_blank" href="https://www.linkedin.com/in/vivek0712/">
-                    <i class="icon large ion-logo-linkedin"></i></a>
-                </div>
-              </div>
+    <!-- Footer Section -->
+  <!-- Footer Section -->
+<footer class="footer-section">
+  <div class="footer-container">
+    <div class="footer-grid">
+      <!-- About Column -->
+      <div class="footer-col footer-about">
+        <h5 class="footer-title">À propos</h5>
+        <div class="footer-logo">
+          <img src="images/awsug-kin-logo-white.png" alt="AWS UG Kinshasa Logo" width="150">
+        </div>
+        <p>
+          AWS User Group Kinshasa est une communauté de passionnés des technologies cloud AWS. 
+          Nous organisons des événements pour partager des connaissances et promouvoir l'adoption 
+          du cloud computing en République Démocratique du Congo.
+        </p>
+      </div>
       
-              <div class="person" data-fname="Vijaya" data-lname="Nirmala">
-                <div class="img">
-                  <a target="_blank" href="https://www.linkedin.com/in/vijayanirmalagopal/">
-                    <i class="icon large ion-logo-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
+      <!-- Quick Links Column -->
+      <div class="footer-col footer-links">
+        <h5 class="footer-title">Navigation</h5>
+        <ul class="footer-nav">
+          <li><a href="#home" class="footer-link">Accueil</a></li>
+          <li><a href="#agenda" class="footer-link">Agenda</a></li>
+          <li><a href="#speakers" class="footer-link">Conférenciers</a></li>
+          <li><a href="#sponsors" class="footer-link">Sponsors</a></li>
+          <li><a href="#workshops" class="footer-link">Ateliers</a></li>
+          <li><a href="code-of-conduct.html" class="footer-link">Code de conduite</a></li>
+        </ul>
+      </div>
+      
+      <!-- Contact Column -->
+      <div class="footer-col footer-contact">
+        <h5 class="footer-title">Contact</h5>
+        <ul class="footer-contact-list">
+          <li>
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:info@aws-community-kin.com">info@aws-community-kin.com</a>
+          </li>
+          <li>
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Kinshasa, République Démocratique du Congo</span>
+          </li>
+          <li>
+            <i class="fas fa-calendar-alt"></i>
+            <span>22 Novembre 2025</span>
+          </li>
+        </ul>
+        
+        <!-- Social Media Links -->
+        <div class="footer-social">
+          <a href="#" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="#" target="_blank" aria-label="Twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#" target="_blank" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#" target="_blank" aria-label="YouTube">
+            <i class="fab fa-youtube"></i>
+          </a>
         </div>
       </div>
     </div>
- 
-    <div class="bottom-footer text-center">
-      <div class="container">
-        <div class="col-lg-12">
-          <span>For any queries reach out to </span><a href="mailto:info@awsugblr.in ">info@awsugblr.in </a>
-        </div>
+    
+    <!-- Copyright Row -->
+    <div class="footer-bottom">
+      <div class="footer-copyright">
+        <p>&copy; 2025 AWS User Group Kinshasa. Tous droits réservés.</p>
+        <p class="disclaimer">AWS Community Day Kinshasa est un événement organisé par la communauté et n'est pas affilié à Amazon Web Services, Inc.</p>
       </div>
     </div>
   </div>
+</footer>
   <script src="js/intlTelInput.js"></script>
   <script type="text/javascript" src="js/site.js"></script>
   <script async defer
