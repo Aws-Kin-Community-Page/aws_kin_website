@@ -112,6 +112,11 @@
     .modal { background-color: rgba(0, 0, 0, 0.5); z-index: 1050; }
     .modal-backdrop { opacity: 0.7 !important; }
 
+    html, body {
+      overflow-x: hidden;
+    }
+
+
     /* Session/Workshop speakers */
     .session-speakers-container {
       display: flex;
@@ -149,37 +154,48 @@
     }
 
     .section-1 {
-  padding-top: 2rem; /* smaller padding for mobile */
-  padding-bottom: 2rem;
-  position: relative;
-  overflow-x: hidden; /* prevent horizontal overflow */
-}
+        width: 100vw;              /* match viewport width exactly */
+        overflow-x: hidden;        /* cut any horizontal overflow */
+      }
 
-.section-1 .content {
-  position: relative; /* let content flow naturally */
-}
+      .section-1 .content {
+        width: 100%;
+        max-width: 100%;
+        position: relative;
+      }
 
-.section-1 img {
-  max-width: 100%;
-  height: auto;
-}
+      .section-1 * {
+        max-width: 100%;           /* no child wider than parent */
+        box-sizing: border-box;
+        word-break: break-word;    /* break long text lines */
+      }
 
-.section-1 .left {
-  width: 100% !important;
-  box-sizing: border-box;
-}
+      .section-1 img {
+        width: 100%;
+        height: auto;
+      }
 
+
+/* Restore desktop styles */
 @media (min-width: 768px) {
   .section-1 {
-    padding-top: 6rem; /* more space for desktop */
+    padding-top: 6rem;
   }
+
   .section-1 .content {
-    position: absolute; /* only absolute on larger screens if needed */
+    position: absolute;    /* if you want it overlaid on background */
     top: 0;
     left: 0;
     right: 0;
+    flex-wrap: nowrap;     /* allow horizontal alignment again */
+  }
+
+  .section-1 .content > * {
+    flex: unset;
+    max-width: none;
   }
 }
+
     /* Footer Styles */
   .footer-section {
     background: linear-gradient(135deg, #232f3e 0%, #1a2533 100%);
@@ -518,7 +534,7 @@
               <div class="left_in">
                 <img src="images/ACD-Dark-Bg-logo-400-x-200.png">
                 <div class="landing-register-btn">
-                  <a href="https://www.linkedin.com/company/aws-user-group-congo-kinshasa" target="_blank" class="register-now-btn">Rejoignez-nous maintenant !</a>
+                  <a href="https://www.linkedin.com/company/aws-user-group-congo-kinshasa" target="_blank" class="register-now-btn mb-3">Rejoignez-nous maintenant !</a>
                 </div>
                 <div class="txt">
                   <h4 class="headin-ttl">
@@ -635,9 +651,9 @@
         
             </ul>
           </div>
-          <br /><b>Veuillez lire le
+          <!-- <br /><b>Veuillez lire le
             <a href="code-of-conduct.html" target="_blank">Code de conduite</a>
-            pour cet evenement</b>
+            pour cet evenement</b> -->
         </div>
       </div>
     </div>
@@ -648,16 +664,6 @@
         <h5 style="font-size: 18px; line-height: 1.5em; padding-bottom: 10px;text-align: center;">
           Nous sommes à la recherche de sponsors pour soutenir notre événement. Si vous êtes intéressé à parrainer, veuillez consulter nos détails de parrainage dans le PDF ci-dessous.
         </h5>
-  
-        <div style="align-items: center;
-            text-align: center;
-            width: 50%;
-            margin-left: auto;
-            margin-right: auto;margin-bottom:70px;">
-              <div class="f1">
-                <a href="#" target="_blank" class="button large">Téléchargez le dossier de parrainage</a>
-              </div>
-        </div>
       </div>
     </div>
     <!-- <div class="section-8" id="blogathon">
@@ -1481,9 +1487,6 @@
       <!-- About Column -->
       <div class="footer-col footer-about">
         <h5 class="footer-title">À propos</h5>
-        <div class="footer-logo">
-          <img src="images/awsug-kin-logo-white.png" alt="AWS UG Kinshasa Logo" width="150">
-        </div>
         <p>
           AWS User Group Kinshasa est une communauté de passionnés des technologies cloud AWS. 
           Nous organisons des événements pour partager des connaissances et promouvoir l'adoption 
