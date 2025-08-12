@@ -148,6 +148,38 @@
       .session-speaker-image { margin-right: 15px; margin-bottom: 0; }
     }
 
+    .section-1 {
+  padding-top: 2rem; /* smaller padding for mobile */
+  padding-bottom: 2rem;
+  position: relative;
+  overflow-x: hidden; /* prevent horizontal overflow */
+}
+
+.section-1 .content {
+  position: relative; /* let content flow naturally */
+}
+
+.section-1 img {
+  max-width: 100%;
+  height: auto;
+}
+
+.section-1 .left {
+  width: 100% !important;
+  box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+  .section-1 {
+    padding-top: 6rem; /* more space for desktop */
+  }
+  .section-1 .content {
+    position: absolute; /* only absolute on larger screens if needed */
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+}
     /* Footer Styles */
   .footer-section {
     background: linear-gradient(135deg, #232f3e 0%, #1a2533 100%);
@@ -390,7 +422,7 @@
     gap: 1rem;
     padding: 1rem;
   }
-  
+
   #agenda {
   display: flex;
   justify-content: center; /* horizontal centering */
